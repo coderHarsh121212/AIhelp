@@ -127,9 +127,12 @@ const ProductsPage = () => {
           autoPlayInterval={3000}
           buttonsDisabled={true}
           disableDotsControls={false}
-          disableButtonsControls={true}
         >
-          <div key={1} className=" rounded-xl py-5 mb-5"  style={{ backgroundImage: `url(${aboutimg1})` }}>
+          <div
+            key={1}
+            className=" rounded-xl py-5 mb-5"
+            style={{ backgroundImage: `url(${aboutimg1})` }}
+          >
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
@@ -162,7 +165,11 @@ const ProductsPage = () => {
               </div>
             </div>
           </div>
-          <div key={2} className=" rounded-xl py-5 mb-5" style={{ backgroundImage: `url(${aboutimg1})` }}>
+          <div
+            key={2}
+            className=" rounded-xl py-5 mb-5"
+            style={{ backgroundImage: `url(${aboutimg1})` }}
+          >
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
@@ -192,10 +199,14 @@ const ProductsPage = () => {
                     <p>48,000+ units</p>
                   </div>
                 </div>
-                </div>
               </div>
             </div>
-            <div key={3} className=" rounded-xl py-5 mb-5" style={{ backgroundImage: `url(${aboutimg1})` }}>
+          </div>
+          <div
+            key={3}
+            className=" rounded-xl py-5 mb-5"
+            style={{ backgroundImage: `url(${aboutimg1})` }}
+          >
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
@@ -227,7 +238,7 @@ const ProductsPage = () => {
                 </div>
               </div>
             </div>
-            </div>
+          </div>
         </AliceCarousel>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           Initiate Consultation

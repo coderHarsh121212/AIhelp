@@ -23,30 +23,55 @@ const AboutUsSection = () => {
         </div>
       </section>
       <div className=" w-[90%] px-5 py-6 mx-auto">
-        <h3 className="text-2xl font-semibold mb-4 text-center text-blue-500">
+        <h3 className="text-2xl  lg:text-5xl font-semibold mb-8 text-center text-blue-500 ">
           Core Values
         </h3>
-        <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  items-center mx-auto">
-          <div class="border-2 p-4 font-serif rounded-md list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
-            <span class="font-semibold">Innovation:</span> Continuously pushing
+        <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  items-center mx-auto">
+          <div
+            className="border-2 p-4 font-semibold  font-serif rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col bg-cover bg-center bg-no-repeat animate-pulse "
+            style={{
+              backgroundImage: `url(https://th.bing.com/th/id/OIP.GLZY4jLA5SCM6lNcWA5IXwAAAA?rs=1&pid=ImgDetMain)`
+            }}
+          >
+            <span class="font-extrabold ">Innovation:</span> Continuously pushing
             AI boundaries to pioneer transformative solutions.
           </div>
 
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
-            <span className="font-semibold">Excellence:</span> Pursuing
+          <li
+            className="border-2 p-4  font-semibold  font-serif rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col bg-cover bg-center bg-no-repeat animate-pulse "
+            style={{
+              backgroundImage: `url(https://th.bing.com/th?id=OIP.12rHGDpFqQXMyIyeWICRRgHaDP&w=349&h=153&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2)`
+            }}
+          >
+            <span className="font-extrabold">Excellence:</span> Pursuing
             unparalleled quality and performance across all endeavors.
           </li>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
-            <span className="font-semibold">Customer-Focus:</span> Placing
+          <li
+            className="border-2 p-4 font-serif font-semibold  rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col animate-pulse "
+            style={{
+              backgroundImage: `url(https://th.bing.com/th?id=OIP.IHMqTxCJv5cUyMnB0e6LAAHaDn&w=350&h=170&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2)`
+            }}
+          >
+            <span className="font-extrabold">Customer-Focus:</span> Placing
             customers at the core, tailoring solutions to their distinct
             requirements.
           </li>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
-            <span className="font-semibold">Collaboration:</span> Cultivating a
+          <li
+            className="border-2 p-4 font-serif font-semibold  rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col bg-cover bg-center bg-no-repeat animate-pulse "
+            style={{
+              backgroundImage: `url(https://th.bing.com/th/id/OIP.p3bucIFmpr_MpU63NBKBkAHaE8?rs=1&pid=ImgDetMain)`
+            }}
+          >
+            <span className="font-extrabold">Collaboration:</span> Cultivating a
             collaborative environment, fostering teamwork, partnerships, and
             knowledge exchange.
           </li>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
+          <li
+            className="border-2 p-4 font-serif font-semibold  rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col  bg-cover bg-center bg-no-repeat animate-pulse "
+            style={{
+              backgroundImage: `url(https://th.bing.com/th/id/OIP.tqpleDOR6bWNWJ4KwilSbwHaEK?rs=1&pid=ImgDetMain)`
+            }}
+          >
             <span className="font-semibold">Integrity:</span> Upholding the
             utmost ethical standards, ensuring transparency, privacy, and
             security.
