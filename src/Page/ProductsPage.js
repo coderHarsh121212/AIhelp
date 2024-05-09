@@ -26,27 +26,46 @@ const ProductsPage = () => {
       <section className="py-12 px-4 bg-white">
         <div className="grid grid-cols-1 justify-center items-center md:grid-cols-2">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-semibold mb-5">AI Voicebots</h2>
-            <p className="mb-5">
+            <h2 className="text-3xl font-semibold mb-5 text-blue-500">
+              AI Voicebots
+            </h2>
+            <p className="mb-5 text-blue-300">
               Transform customer engagements with smart, lifelike dialogues.
             </p>
-            <ul className="mb-5">
+            <ul className="mb-5 text-blue-400">
               <li>Cutting-edge NLP ensuring precise intent comprehension</li>
               <li>Support for multiple languages and analysis of sentiment</li>
               <li>Effortless integration with CRM and support platforms</li>
             </ul>
-            <p className="mb-5">Applications across various industries:</p>
-            <ul className="mb-5">
+            <p className="mb-5 text-blue-500">Applications across various industries:</p>
+            <ul className="mb-5 text-blue-600">
               <li>Enhancing Customer Support</li>
               <li>Streamlining Appointment Scheduling</li>
               <li>Facilitating Lead Qualification</li>
             </ul>
 
-            <p className="font-semibold">Pricing:</p>
-            <ul className="mb-5">
-              <li>Starter Plan: $499 per month</li>
-              <li>Growth Plan: $1,499 per month</li>
-              <li>Enterprise Plan: Tailored pricing</li>
+            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+              Pricing:
+            </p>
+            <ul className="mb-5 flex items-center justify-between my-3">
+              <div>
+                <li className="font-semibold text-2xl text-blue-700">
+                  Starter Plan:
+                </li>
+                <li className="text-blue-700">$499 per month</li>
+              </div>
+              <div>
+                <li className="font-semibold text-2xl text-blue-700">
+                  Growth Plan:
+                </li>
+                <li className="text-blue-700">$1,499 per month</li>
+              </div>
+              <div>
+                <li className="font-semibold text-2xl text-blue-700">
+                  Enterprise Plan:
+                </li>
+                <li className="text-blue-700">Tailored pricing</li>
+              </div>
             </ul>
           </div>
           <div>
@@ -65,28 +84,77 @@ const ProductsPage = () => {
       <section className="py-12 px-4 bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-semibold mb-5">AI Chatbots</h2>
-            <p className="mb-5">
+            <h2 className="text-3xl font-semibold mb-5 text-blue-500">
+              AI Chatbots
+            </h2>
+            <p className="mb-5 text-blue-300">
               Interact with clients through personalized, context-sensitive
               chatbots across various platforms.
             </p>
-            <p className="font-semibold">Features:</p>
-            <ul className="mb-5">
-              <li>Deployment across all channels</li>
-              <li>Support for diverse media formats and customization</li>
-              <li>Smooth transition to human agents</li>
+            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+              Features:
+            </p>
+            <ul className="mb-5 flex items-center justify-between my-3">
+              <div>
+                <li className="font-semibold  text-blue-700">
+                  Deployment across all channels
+                </li>
+              </div>
+              <div>
+                <li className="font-semibold  text-blue-700">
+                  Support for diverse media formats and customization
+                </li>
+              </div>
+              <div>
+                <li className="font-semibold  text-blue-700">
+                  Smooth transition to human agents
+                </li>
+              </div>
             </ul>
-            <p className="font-semibold">Applicable Industries:</p>
-            <ul className="mb-5">
-              <li>E-commerce</li>
-              <li>Banking and Finance</li>
-              <li>Healthcare</li>
+
+            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+              Applicable Industries:
+            </p>
+            <ul className="mb-5 flex items-center justify-between my-3">
+              <div>
+                <li className="font-semibold   text-blue-700">
+                  E-commerce
+                </li>
+              </div>
+              <div>
+                <li className="font-semibold   text-blue-700">
+                  Banking and Finance
+                </li>
+              </div>
+              <div>
+                <li className="font-semibold   text-blue-700">
+                  Healthcare
+                </li>
+              </div>
             </ul>
-            <p className="font-semibold">Pricing:</p>
-            <ul className="mb-8">
-              <li>Basic: $299/month</li>
-              <li>Pro: $999/month</li>
-              <li>Enterprise: Tailored pricing</li>
+
+            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+              Pricing:
+            </p>
+            <ul className="mb-5 flex items-center justify-between my-3">
+              <div>
+                <li className="font-semibold text-2xl text-blue-700">
+                  Starter Plan:
+                </li>
+                <li className="text-blue-700">$499 per month</li>
+              </div>
+              <div>
+                <li className="font-semibold text-2xl text-blue-700">
+                  Growth Plan:
+                </li>
+                <li className="text-blue-700">$1,499 per month</li>
+              </div>
+              <div>
+                <li className="font-semibold text-2xl text-blue-700">
+                  Enterprise Plan:
+                </li>
+                <li className="text-blue-700">Tailored pricing</li>
+              </div>
             </ul>
           </div>
           <div>
@@ -103,20 +171,20 @@ const ProductsPage = () => {
       </section>
 
       <section className="py-12 px-4 bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col w-3/4 pl-10">
-            <h2 className="text-3xl font-semibold mb-8">Custom AI Agents</h2>
-            <p className="mb-8">
+        <div className="grid grid-cols-1 ">
+          <div className="flex flex-col w-full pl-10  justify-center items-center">
+            <h2 className="text-3xl font-semibold mb-8 text-blue-700">Custom AI Agents</h2>
+            <p className="mb-8 text-blue-600">
               Customized solutions designed to meet the specific demands of your
               business, ensuring unparalleled outcomes.
             </p>
-            <p className="mb-8">
+            <p className="mb-8 text-blue-500">
               Personalized consultation and development procedures
             </p>
-            <p className="mb-8">
+            <p className="mb-8 text-blue-400">
               Effortless incorporation with current infrastructures
             </p>
-            <p className="mb-8">
+            <p className="mb-8 text-blue-300">
               Demonstrated triumphs spanning various sectors
             </p>
           </div>
