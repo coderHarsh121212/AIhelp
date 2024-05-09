@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, useNavigate, useLocation, NavLink } from "react-router-dom";
-
+import homeImage from "../images/image.png";
+import AboutImage from "../images/bg1.png"
+import ProductImage from "../images/bg3.png"
+import IndustryImage from "../images/bg2.png"
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(true);
   const [scrollY, setScrollY] = useState(0);
@@ -33,7 +36,16 @@ const Navbar = () => {
           scrollY > 0 ? "bg-black" : "bg-white md:bg-transparent"
         }`}
       >
-        <div className="flex items-center justify-between">
+        <div
+          className="flex items-center justify-between"
+          style={{
+            background:
+              location.pathname === "/" || location.pathname === "/home"
+                ?` url(${homeImage})`
+                : location.pathname==="/aboutUs"?`url(${AboutImage})`:location.pathname==="/Products"?`url(${ProductImage})`:location.pathname==="/industry"?`url(${IndustryImage})`:location.pathname==="/contactus"?'url(https://wallpapers.com/images/hd/glowing-contact-us-logo-qx58564q7a51etk6.jpg)':""
+              
+          }}
+        >
           <div className="flex items-center">
             <img
               src="https://static.wixstatic.com/media/30aef6_b482c098bfa543898242124184eea151%7Emv2.png/v1/fit/w_2500,h_1330,al_c/30aef6_b482c098bfa543898242124184eea151%7Emv2.png"
@@ -42,10 +54,7 @@ const Navbar = () => {
               crossOrigin="anonymous"
             />
           </div>
-          <div
-            className="hidden md:flex items-center space-x-8 pr-10"
-           
-          >
+          <div className="hidden md:flex items-center space-x-8 pr-10">
             <NavLink
               to="/"
               className={`text-${
