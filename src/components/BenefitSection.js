@@ -9,22 +9,22 @@ const BenefitsSection = () => {
           <BenefitCard
             title="Enhanced Customer Satisfaction"
             description="Deliver immediate, tailored, round-the-clock assistance to your clients, elevating satisfaction scores by up to 25% and curbing customer turnover."
-            image="/images/satisfied-customers.png"
+            image="https://th.bing.com/th?id=OIP.0_zIKCHFLt144bPxifwJBgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
           />
           <BenefitCard
             title="Increased Operational Efficiency and Output"
             description="Automate a significant portion—up to 60%—of mundane tasks, streamline operations, and empower your staff to concentrate on strategic endeavors."
-            image="/images/operational-efficiency.png"
+            image="https://blog.pureintegration.com/hubfs/operational-efficiency%20(1).jpg"
           />
           <BenefitCard
             title="Actionable Business Intelligence"
             description="Acquire invaluable insights into customer actions, preferences, and market trends via AI-driven analytics and reporting, featuring more than 50 customizable dashboards and metrics."
-            image="/images/business-intelligence.png"
+            image="https://th.bing.com/th/id/OIP.h2RpMOhsbwKXa0GtfT48HQHaDv?rs=1&pid=ImgDetMain"
           />
           <BenefitCard
             title="Competitive Advantages"
             description="Position yourself among industry frontrunners who have experienced up to a 50% surge in conversion rates and achieved a 30% swifter issue resolution using our AI Assistant SaaS."
-            image="/images/competitive-advantages.png"
+            image="https://th.bing.com/th/id/OIP.-qmEVHK79-OELBjlcqrJJAHaEG?rs=1&pid=ImgDetMain"
           />
         </div>
       </div>
