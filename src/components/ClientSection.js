@@ -3,12 +3,12 @@ import React from "react";
 const ClientLogosSection = () => {
   // Sample array of client logos, replace with your actual logos
   const clientLogos = [
-    "https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png",
-    "https://th.bing.com/th/id/OIP.vaI5mdOwfF8e50rGYjsdKgHaE6?rs=1&pid=ImgDetMain",
-    "https://logospng.org/download/amazon/logo-amazon-2048.png",
-    "https://th.bing.com/th/id/OIP.cV5pF2087HRQSzrgDyZ2xgHaB_?rs=1&pid=ImgDetMain",
-    "https://th.bing.com/th/id/OIP.MPHAVL52hadir7pe0HszoAAAAA?rs=1&pid=ImgDetMain",
-    "https://th.bing.com/th/id/OIP.bvOcW76SKhQ5anT-2y7mAQHaHa?w=512&h=512&rs=1&pid=ImgDetMain"
+    "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2023/03/openai-logo-1.jpg?w=1024&quality=82&strip=all&ssl=1",
+    "https://th.bing.com/th/id/OIP.V76pKDROWY8S0qtK7wIQuAHaGu?rs=1&pid=ImgDetMain",
+    "https://download.logo.wine/logo/Zoho_Corporation/Zoho_Corporation-Logo.wine.png",
+    "https://th.bing.com/th/id/OIP.iAMfSayxPiaB5oJAHmOCSwAAAA?rs=1&pid=ImgDetMain",
+    "https://th.bing.com/th/id/OIP.hLgm-rvV0mnJ0qmIuiKgKQHaEW?rs=1&pid=ImgDetMain",
+    "https://th.bing.com/th/id/OIP.Bo69GjdZ7SR2iiVKDyJDVQHaHa?rs=1&pid=ImgDetMain"
   ];
 
   return (

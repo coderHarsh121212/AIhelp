@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-
+import Faqimg from "../images/FaqBackground.png"
 const FAQsSection = () => {
   const faqs = [
     {
@@ -78,8 +78,8 @@ const FAQsSection = () => {
   ];
 
   return (
-    <section className="py-12 px-4">
-      <div className="max-w-3xl mx-auto">
+    <section className="py-12 px-4"      style={{ backgroundImage: `url(${Faqimg})` }}>
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-blue-500 text-center">
           Frequently Asked Questions
         </h2>

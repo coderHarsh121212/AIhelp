@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutimg from '../images/image.png'
+import aboutimg from '../images/bg2.png'
 const IndustriesSection = () => {
   const industries = [
     {
@@ -42,11 +42,13 @@ const IndustriesSection = () => {
         <h2 className="text-7xl font-semibold  text-white my-20 mb-40 ">Industries</h2> 
       </div>
     </section>
+    <div className='px-10'>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto my-10">
           {industries.map((industry, index) => (
             <IndustryCard key={index} industry={industry} />
           ))}
         </div>
+    </div>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import aboutimg from "../images/image.png";
 const ContactUspage = () => {
   return (
     <div
-      className="relative  h-fit px-4 bg-cover bg-no-repeat text-white"
-      style={{ backgroundImage: `url(${aboutimg})` }}
+      className="relative  h-fit px-4 bg-cover bg-no-repeat text-white bg-gray-100"
+      
     >
       <div className=" mx-auto py-20">
         <section className="py-12 ">
@@ -53,7 +53,7 @@ const ContactUspage = () => {
           </div>
         </section>
         <section className="py-12 ">
-          <div className="w-full md:w-2/3 mx-auto boxshadow1">
+          <div className="w-full md:w-2/3 mx-auto boxshadow1 pb-5">
             <h2 className="text-3xl font-semibold text-center mb-6">
               We're Here To Help
             </h2>
@@ -109,7 +109,7 @@ const ContactUspage = () => {
               <div>
                 <button
                   type="submit"
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                 >
                   Send Message
                 </button>
