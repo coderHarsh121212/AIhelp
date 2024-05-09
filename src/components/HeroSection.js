@@ -31,7 +31,7 @@ const AISection = () => {
           </div>
         </div>
       </section>
-      <div className="mt-1 border-2 rounded border-blue-500 w-3/4 mx-auto">
+      <div className="mt-1 border-2 rounded border-blue-500 w-[80%] h-[20%] mx-auto">
         {/* Video */}
         <iframe
           className="w-full h-64 md:h-96 rounded shadow-md"
