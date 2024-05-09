@@ -36,7 +36,7 @@ const BenefitCard = ({ title, description, image }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg element">
       <div className="mb-4">
-        <img src="https://images.pexels.com/photos/3183181/pexels-photo-3183181.jpeg" alt={title} className="w-full h-auto" />
+        <img src={image} alt={title} className="w-full h-auto" />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700">{description}</p>
