@@ -41,7 +41,7 @@ const Navbar = () => {
               crossOrigin="anonymous"
             />
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 pt-7 mr-40">
             <a
               href="#"
               className={`text-${
@@ -88,6 +88,17 @@ const Navbar = () => {
               Contact Us
             </a>
             {/* Add similar classes to other links */}
+          </div>
+          <div className="absolute right-5 top-4">
+            <button
+              className={`hidden md:block px-10 font-sans font-semibold py-2 rounded-md ${
+                scrollY > 0
+                  ? "bg-white text-black hover:bg-blue-500"
+                  : "bg-gray-700 text-white hover:bg-blue-500"
+              } hover:hover-nav`}
+            >
+              Log In
+            </button>
           </div>
           <div className="md:hidden">
             <button id="menuBtn" onClick={toggleHidden}>
@@ -136,21 +147,51 @@ const Navbar = () => {
           isHidden ? "-translate-x-full" : "translate-x-0"
         }`}
       >
-        <a href="#" onClick={() => navigate("/")} className=" hover:text-blue-500 font-sans text-xl">
+        <a
+          href="#"
+          onClick={() => navigate("/")}
+          className=" hover:text-blue-500 font-sans text-xl"
+        >
           Home
         </a>
-        <a href="#" onClick={() => navigate("/aboutUs")} className=" hover:text-blue-500 font-sans text-xl">
+        <a
+          href="#"
+          onClick={() => navigate("/aboutUs")}
+          className=" hover:text-blue-500 font-sans text-xl"
+        >
           About US
         </a>
-        <a href="#" onClick={() => navigate("/Products")} className=" hover:text-blue-500 font-sans text-xl">
+        <a
+          href="#"
+          onClick={() => navigate("/Products")}
+          className=" hover:text-blue-500 font-sans text-xl"
+        >
           Products
         </a>
-        <a href="#" onClick={() => navigate("/industry")} className=" hover:text-blue-500 font-sans text-xl">
+        <a
+          href="#"
+          onClick={() => navigate("/industry")}
+          className=" hover:text-blue-500 font-sans text-xl"
+        >
           Industry
         </a>
-        <a href="#" onClick={() => navigate("/contactus")} className=" hover:text-blue-500 font-sans text-xl">
+        <a
+          href="#"
+          onClick={() => navigate("/contactus")}
+          className=" hover:text-blue-500 font-sans text-xl"
+        >
           Contact Us
         </a>
+
+        <button
+          className={`  px-10 font-sans font-semibold py-2 rounded-md ${
+            scrollY > 0
+              ? "bg-white text-black hover:bg-blue-500"
+              : "bg-gray-700 text-white hover:bg-blue-500"
+          } hover:hover-nav`}
+        >
+          Log In
+        </button>
       </div>
       <Outlet />
     </div>
