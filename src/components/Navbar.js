@@ -44,9 +44,7 @@ const Navbar = () => {
           </div>
           <div
             className="hidden md:flex items-center space-x-8 pr-10"
-            style={{
-              color: location.pathname === "/contactus" ? "#240ada" : "inherit"
-            }}
+           
           >
             <NavLink
               to="/"

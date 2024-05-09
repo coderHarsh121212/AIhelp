@@ -3,8 +3,8 @@ import aboutimg from "../images/image.png";
 const ContactUspage = () => {
   return (
     <div
-      className="relative  h-fit px-4 bg-cover bg-no-repeat text-white bg-gray-100"
-      
+      className="relative  h-fit px-4 bg-contain  text-white bg-gray-100"
+      style={{ backgroundImage: `url(${"https://wallpapers.com/images/hd/glowing-contact-us-logo-qx58564q7a51etk6.jpg"})` }}
     >
       <div className=" mx-auto py-20">
         <section className="py-12 ">
@@ -53,7 +53,7 @@ const ContactUspage = () => {
           </div>
         </section>
         <section className="py-12 ">
-          <div className="w-full md:w-2/3 mx-auto boxshadow1 pb-5">
+          <div className="w-full md:w-2/3 mx-auto shadow-2xl pb-5">
             <h2 className="text-3xl font-semibold text-center mb-6">
               We're Here To Help
             </h2>
@@ -66,7 +66,7 @@ const ContactUspage = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-500"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-300 text-black"
                   placeholder="Your Name"
                 />
               </div>
@@ -75,7 +75,7 @@ const ContactUspage = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-500"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-300 text-black"
                   placeholder="Your Email"
                 />
               </div>
@@ -84,7 +84,7 @@ const ContactUspage = () => {
                   type="tel"
                   name="phone"
                   id="phone"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-500"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-300 text-black"
                   placeholder="Your Phone"
                 />
               </div>
@@ -93,7 +93,7 @@ const ContactUspage = () => {
                   type="text"
                   name="subject"
                   id="subject"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-500"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-300 text-black"
                   placeholder="Subject"
                 />
               </div>
@@ -102,7 +102,7 @@ const ContactUspage = () => {
                   name="message"
                   id="message"
                   rows="4"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-500"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-300 text-black"
                   placeholder="Write Message"
                 ></textarea>
               </div>
