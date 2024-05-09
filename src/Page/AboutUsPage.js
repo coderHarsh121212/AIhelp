@@ -22,32 +22,38 @@ const AboutUsSection = () => {
           </div>
         </div>
       </section>
-      <div className=" w-full px-5 py-6">
-        <h3 className="text-2xl font-semibold mb-4 text-center text-blue-500">Core Values</h3>
-        <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  items-center mx-auto">
-          <div className="border-2 p-4 font-serif rounded-md list-none clippathpolygon h-40 w-72 text-center px-10">
-          <span className="font-semibold">Innovation:</span> Continuously pushing AI boundaries to pioneer
-            transformative solutions.
+      <div className=" w-[90%] px-5 py-6 mx-auto">
+        <h3 className="text-2xl font-semibold mb-4 text-center text-blue-500">
+          Core Values
+        </h3>
+        <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  items-center mx-auto">
+          <div class="border-2 p-4 font-serif rounded-md list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
+            <span class="font-semibold">Innovation:</span> Continuously pushing
+            AI boundaries to pioneer transformative solutions.
           </div>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathpolygon h-40 w-72 text-center px-10">
-          <span className="font-semibold">Excellence:</span> Pursuing unparalleled quality and performance across all
-            endeavors.
+
+          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
+            <span className="font-semibold">Excellence:</span> Pursuing
+            unparalleled quality and performance across all endeavors.
           </li>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathpolygon h-40 w-72 text-center px-10">
-          <span className="font-semibold">Customer-Focus:</span>   Placing customers at the core, tailoring solutions
-            to their distinct requirements.
+          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
+            <span className="font-semibold">Customer-Focus:</span> Placing
+            customers at the core, tailoring solutions to their distinct
+            requirements.
           </li>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathpolygon h-40 w-72 text-center px-10">
-          <span className="font-semibold">Collaboration:</span>   Cultivating a collaborative environment, fostering
-            teamwork, partnerships, and knowledge exchange.
+          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
+            <span className="font-semibold">Collaboration:</span> Cultivating a
+            collaborative environment, fostering teamwork, partnerships, and
+            knowledge exchange.
           </li>
-          <li className="border-2 p-4 font-serif rounded-md  list-none clippathpolygon h-40 w-72 text-center px-10">
-            <span className="font-semibold">Integrity:</span> Upholding the utmost ethical standards, ensuring
-            transparency, privacy, and security.
+          <li className="border-2 p-4 font-serif rounded-md  list-none clippathoctagon h-40 w-full md:w-72 text-center px-10 flex justify-center items-center flex-col">
+            <span className="font-semibold">Integrity:</span> Upholding the
+            utmost ethical standards, ensuring transparency, privacy, and
+            security.
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-2 gap-2 mb-5 w-[90%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-5 w-[90%] mx-auto">
         <div className="border-2 py-6 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300">
           <h3 className="text-xl font-semibold mb-4">Press and Media</h3>
           <ul className="list-disc list-inside">

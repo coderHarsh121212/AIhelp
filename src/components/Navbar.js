@@ -136,19 +136,19 @@ const Navbar = () => {
           isHidden ? "-translate-x-full" : "translate-x-0"
         }`}
       >
-        <a href="#" onClick={() => navigate("/")}>
+        <a href="#" onClick={() => navigate("/")} className=" hover:text-blue-500 font-sans text-xl">
           Home
         </a>
-        <a href="#" onClick={() => navigate("/aboutUs")}>
+        <a href="#" onClick={() => navigate("/aboutUs")} className=" hover:text-blue-500 font-sans text-xl">
           About US
         </a>
-        <a href="#" onClick={() => navigate("/Products")}>
+        <a href="#" onClick={() => navigate("/Products")} className=" hover:text-blue-500 font-sans text-xl">
           Products
         </a>
-        <a href="#" onClick={() => navigate("/industry")}>
+        <a href="#" onClick={() => navigate("/industry")} className=" hover:text-blue-500 font-sans text-xl">
           Industry
         </a>
-        <a href="#" onClick={() => navigate("/contactus")}>
+        <a href="#" onClick={() => navigate("/contactus")} className=" hover:text-blue-500 font-sans text-xl">
           Contact Us
         </a>
       </div>
