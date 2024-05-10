@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import aboutimg from "../images/bg3.png";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import aboutimg1 from "../images/achievements.png";
 const ProductsPage = () => {
+  const [showChat, setShowChat] = useState(true);
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="min-h-screen">
       <header
         className="py-48 px-4 text-center bg-white bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${aboutimg})` }}
@@ -22,158 +23,173 @@ const ProductsPage = () => {
           </p>
         </div>
       </header>
-
-      <section className="py-12 px-4 bg-white">
-        <div className="grid grid-cols-1 justify-center items-center md:grid-cols-2">
-          <div className="flex flex-col">
-            <h2 className="text-3xl font-semibold mb-5 text-blue-500">
-              AI Voicebots
-            </h2>
-            <p className="mb-5 text-blue-300">
-              Transform customer engagements with smart, lifelike dialogues.
-            </p>
-            <ul className="mb-5 text-blue-400">
-              <li>Cutting-edge NLP ensuring precise intent comprehension</li>
-              <li>Support for multiple languages and analysis of sentiment</li>
-              <li>Effortless integration with CRM and support platforms</li>
-            </ul>
-            <p className="mb-5 text-blue-500">Applications across various industries:</p>
-            <ul className="mb-5 text-blue-600">
-              <li>Enhancing Customer Support</li>
-              <li>Streamlining Appointment Scheduling</li>
-              <li>Facilitating Lead Qualification</li>
-            </ul>
-
-            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-              Pricing:
-            </p>
-            <ul className="mb-5 flex items-center justify-between my-3">
-              <div>
-                <li className="font-semibold text-2xl text-blue-700">
-                  Starter Plan:
-                </li>
-                <li className="text-blue-700">$499 per month</li>
-              </div>
-              <div>
-                <li className="font-semibold text-2xl text-blue-700">
-                  Growth Plan:
-                </li>
-                <li className="text-blue-700">$1,499 per month</li>
-              </div>
-              <div>
-                <li className="font-semibold text-2xl text-blue-700">
-                  Enterprise Plan:
-                </li>
-                <li className="text-blue-700">Tailored pricing</li>
-              </div>
-            </ul>
-          </div>
-          <div>
-            <img
-              src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-              alt="AI Chatbots"
-              className="mx-auto w-64 mt-12"
-            />
-          </div>
-        </div>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-5 md:mt-0">
-          Discover More
+      <div className="flex w-full items-center justify-center my-5 gap-5">
+        <button
+          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${showChat&&"bg-blue-500 text-white"}`}
+          onClick={() => setShowChat(!showChat)}
+        >
+          VOICEBOTS
         </button>
-      </section>
-
-      <section className="py-12 px-4 bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
-          <div className="flex flex-col">
-            <h2 className="text-3xl font-semibold mb-5 text-blue-500">
-              AI Chatbots
-            </h2>
-            <p className="mb-5 text-blue-300">
-              Interact with clients through personalized, context-sensitive
-              chatbots across various platforms.
-            </p>
-            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-              Features:
-            </p>
-            <ul className="mb-5 flex items-center justify-between my-3">
-              <div>
-                <li className="font-semibold  text-blue-700">
-                  Deployment across all channels
-                </li>
-              </div>
-              <div>
-                <li className="font-semibold  text-blue-700">
-                  Support for diverse media formats and customization
-                </li>
-              </div>
-              <div>
-                <li className="font-semibold  text-blue-700">
-                  Smooth transition to human agents
-                </li>
-              </div>
-            </ul>
-
-            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-              Applicable Industries:
-            </p>
-            <ul className="mb-5 flex items-center justify-between my-3">
-              <div>
-                <li className="font-semibold   text-blue-700">
-                  E-commerce
-                </li>
-              </div>
-              <div>
-                <li className="font-semibold   text-blue-700">
-                  Banking and Finance
-                </li>
-              </div>
-              <div>
-                <li className="font-semibold   text-blue-700">
-                  Healthcare
-                </li>
-              </div>
-            </ul>
-
-            <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-              Pricing:
-            </p>
-            <ul className="mb-5 flex items-center justify-between my-3">
-              <div>
-                <li className="font-semibold text-2xl text-blue-700">
-                  Starter Plan:
-                </li>
-                <li className="text-blue-700">$499 per month</li>
-              </div>
-              <div>
-                <li className="font-semibold text-2xl text-blue-700">
-                  Growth Plan:
-                </li>
-                <li className="text-blue-700">$1,499 per month</li>
-              </div>
-              <div>
-                <li className="font-semibold text-2xl text-blue-700">
-                  Enterprise Plan:
-                </li>
-                <li className="text-blue-700">Tailored pricing</li>
-              </div>
-            </ul>
-          </div>
-          <div>
-            <img
-              src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-              alt="Tailored AI Agents"
-              className="mx-auto w-64 mt-12"
-            />
-          </div>
-        </div>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-5 md:mt-0">
-          Discover More
+        <button
+          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${!showChat&&"bg-blue-500 text-white"}`}
+          onClick={() => setShowChat(!showChat)}
+        >
+          CHATBOTS
         </button>
-      </section>
+      </div>
+      {showChat ? (
+        <section className="py-12 px-4 bg-white">
+          <div className="grid grid-cols-1 justify-center items-center  ">
+            <div className="flex flex-col">
+              <h2 className="text-3xl font-semibold mb-5 text-blue-500">
+                AI Voicebots
+              </h2>
+              <p className="mb-5 text-blue-300">
+                Transform customer engagements with smart, lifelike dialogues.
+              </p>
+              <ul className="mb-5 text-blue-400">
+                <li>Cutting-edge NLP ensuring precise intent comprehension</li>
+                <li>
+                  Support for multiple languages and analysis of sentiment
+                </li>
+                <li>Effortless integration with CRM and support platforms</li>
+              </ul>
+              <p className="mb-5 text-blue-500">
+                Applications across various industries:
+              </p>
+              <ul className="mb-5 text-blue-600">
+                <li>Enhancing Customer Support</li>
+                <li>Streamlining Appointment Scheduling</li>
+                <li>Facilitating Lead Qualification</li>
+              </ul>
+
+              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400 w-3/4 mx-auto">
+                Pricing:
+              </p>
+              <ul className="mb-5 flex items-center justify-between my-3 w-3/4 mx-auto">
+                <div>
+                  <li className="font-semibold text-2xl text-blue-700">
+                    Starter Plan:
+                  </li>
+                  <li className="text-blue-700">$499 per month</li>
+                </div>
+                <div>
+                  <li className="font-semibold text-2xl text-blue-700">
+                    Growth Plan:
+                  </li>
+                  <li className="text-blue-700">$1,499 per month</li>
+                </div>
+                <div>
+                  <li className="font-semibold text-2xl text-blue-700">
+                    Enterprise Plan:
+                  </li>
+                  <li className="text-blue-700">Tailored pricing</li>
+                </div>
+              </ul>
+            </div>
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt="AI Chatbots"
+                className="mx-auto  mt-12"
+              />
+            </div>
+          </div>
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8 ">
+            Discover More
+          </button>
+        </section>
+      ) : (
+        <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
+          <div className="grid grid-cols-1  justify-center items-center">
+            <div className="flex flex-col">
+              <h2 className="text-3xl font-semibold mb-5 text-blue-500">
+                AI Chatbots
+              </h2>
+              <p className="mb-5 text-blue-300">
+                Interact with clients through personalized, context-sensitive
+                chatbots across various platforms.
+              </p>
+              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+                Features:
+              </p>
+              <ul className="mb-5 flex items-center justify-between my-3">
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold  ">
+                    Deployment across all channels
+                  </li>
+                </div>
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold  ">
+                    Support for diverse media formats and customization
+                  </li>
+                </div>
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold  ">
+                    Smooth transition to human agents
+                  </li>
+                </div>
+              </ul>
+
+              <p className="font-semibold text-4xl  border-b-2 p-4 border-b-blue-400 text-blue-600">
+                Applicable Industries:
+              </p>
+              <ul className="mb-5 flex items-center justify-between my-3">
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold   ">E-commerce</li>
+                </div>
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold   ">Banking and Finance</li>
+                </div>
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold ">Healthcare</li>
+                </div>
+              </ul>
+
+              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+                Pricing:
+              </p>
+              <ul className="mb-5 flex items-center justify-between my-3">
+                <div>
+                  <li className="font-semibold text-2xl text-blue-700">
+                    Starter Plan:
+                  </li>
+                  <li className="text-blue-700">$499 per month</li>
+                </div>
+                <div>
+                  <li className="font-semibold text-2xl text-blue-700">
+                    Growth Plan:
+                  </li>
+                  <li className="text-blue-700">$1,499 per month</li>
+                </div>
+                <div>
+                  <li className="font-semibold text-2xl text-blue-700">
+                    Enterprise Plan:
+                  </li>
+                  <li className="text-blue-700">Tailored pricing</li>
+                </div>
+              </ul>
+            </div>
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt="Tailored AI Agents"
+                className="mx-auto w-64 mt-12"
+              />
+            </div>
+          </div>
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8">
+            Discover More
+          </button>
+        </section>
+      )}
 
       <section className="py-12 px-4 bg-white">
         <div className="grid grid-cols-1 ">
           <div className="flex flex-col w-full pl-10  justify-center items-center">
-            <h2 className="text-3xl font-semibold mb-8 text-blue-700">Custom AI Agents</h2>
+            <h2 className="text-3xl font-semibold mb-8 text-blue-700">
+              Custom AI Agents
+            </h2>
             <p className="mb-8 text-blue-600">
               Customized solutions designed to meet the specific demands of your
               business, ensuring unparalleled outcomes.

@@ -4,39 +4,61 @@
 
 @layer components {
   .hover-nav {
-    color:white;
+    color: white;
   }
   .element {
     transition: transform 0.3s ease;
   }
-  
+
   .element:hover {
     transform: translateY(-10px); /* Adjust the value (-10px) as needed */
-    cursor:pointer;
-    box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-    -webkit-box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-    -moz-box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
+    cursor: pointer;
+    box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
+    -webkit-box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
+    -moz-box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
     backdrop-filter: blur(10px);
   }
-
-  .boxshadow1{
-    box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-    -webkit-box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-    -moz-box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-   
+  .octagonShape {
+    clip-path: polygon(
+      50% 0%,
+      80% 10%,
+      100% 35%,
+      100% 70%,
+      80% 90%,
+      50% 100%,
+      20% 90%,
+      0% 70%,
+      0% 35%,
+      20% 10%
+    );
+    
+  }
+  .boxshadow1 {
+    box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
+    -webkit-box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
+    -moz-box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
   }
   .clippathoctagon {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);    border: 2px solid black;
-    background-Color:red
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      75% 75%,
+      75% 100%,
+      50% 75%,
+      0% 75%
+    );
+    border: 2px solid black;
+    background-color: red;
   }
-  .testimonal-boxshadow{
-    box-shadow: -1px 0px 5px 3px rgba(38,163,211,0.75);
-    -webkit-box-shadow: -1px 0px 5px 3px rgba(38,163,211,0.75);
-    -moz-box-shadow: -1px 0px 5px 3px rgba(38,163,211,0.75);
+  .testimonal-boxshadow {
+    box-shadow: -1px 0px 5px 3px rgba(38, 163, 211, 0.75);
+    -webkit-box-shadow: -1px 0px 5px 3px rgba(38, 163, 211, 0.75);
+    -moz-box-shadow: -1px 0px 5px 3px rgba(38, 163, 211, 0.75);
   }
-  .footer-box{
-    box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-    -webkit-box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
-    -moz-box-shadow: -1px 0px 5px 3px rgba(106,112,114,0.75);
+  .footer-box {
+    box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
+    -webkit-box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
+    -moz-box-shadow: -1px 0px 5px 3px rgba(106, 112, 114, 0.75);
   }
 }
