@@ -26,7 +26,7 @@ const Footer = () => {
             : location.pathname === "/industry"
             ? `url(${IndustryImage})`
             : location.pathname === "/contactus"
-            ? "url(https://wallpapers.com/images/hd/glowing-contact-us-logo-qx58564q7a51etk6.jpg)"
+            ? `url(${AboutImage})`
             : ""
       }}
     >

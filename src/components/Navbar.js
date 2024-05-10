@@ -42,7 +42,7 @@ const Navbar = () => {
             background:
               location.pathname === "/" || location.pathname === "/home"
                 ?` url(${homeImage})`
-                : location.pathname==="/aboutUs"?`url(${AboutImage})`:location.pathname==="/Products"?`url(${ProductImage})`:location.pathname==="/industry"?`url(${IndustryImage})`:location.pathname==="/contactus"?'url(https://wallpapers.com/images/hd/glowing-contact-us-logo-qx58564q7a51etk6.jpg)':""
+                : location.pathname==="/aboutUs"?`url(${AboutImage})`:location.pathname==="/Products"?`url(${ProductImage})`:location.pathname==="/industry"?`url(${IndustryImage})`:location.pathname==="/contactus"?`url(${AboutImage})`:""
               
           }}
         >
