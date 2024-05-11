@@ -22,15 +22,13 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleHidden = () => {
-    setIsHidden(!isHidden);
-  };
+
 
   return (
     <div className={`w-full footer-box fixed z-50 bg-transparent`}>
       <nav className={` shadow-2xl fixed z-50 w-full `}>
         <div
-          className="flex items-center justify-between"
+          className="flex items-center justify-between text-white"
           style={{
             background:
               location.pathname === "/" || location.pathname === "/home"
@@ -127,8 +125,6 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </div>
-
-          {/* Mobile menu button */}
         </div>
       </nav>
       <div className="fixed top-7 right-3 z-50 md:hidden">
@@ -159,7 +155,7 @@ const Navbar = () => {
               : ""
         }}
         className={`md:hidden fixed w-1/2 h-screen bg-cover bg-center text-white top-20 flex flex-col right-0 gap-8 py-9 custom-transition ${
-          isHidden ? 'hidden' : 'block'
+          isHidden ? "hidden" : "block"
         }`}
       >
         <NavLink

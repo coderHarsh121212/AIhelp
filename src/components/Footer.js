@@ -31,10 +31,10 @@ const Footer = () => {
       }}
     >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Navigation</h3>
-            <ul className="space-y-2">
+            <ul className=" flex flex-col items-center justify-center gap-3 sm:flex-row">
               <li>
                 <a href="#" className="hover:hover-nav">
                   Products
