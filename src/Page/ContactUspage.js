@@ -4,7 +4,7 @@ const ContactUspage = () => {
   return (
     <div>
     <div
-      className="relative w-full h-[70vh] flex  px-4 bg-contain  text-white bg-gray-100 items-center justify-center"
+      className="relative w-full h-[70vh] flex  px-4 bg-cover  text-white bg-gray-100 items-center justify-center bg-no-repeat"
       style={{ backgroundImage: `url(${aboutimg})` }}
     >
      <h1 className="text-3xl sm:text-5xl lg:text-7xl">Contact US</h1>

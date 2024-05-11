@@ -62,11 +62,30 @@ const ProductsPage = () => {
                 <li>Streamlining Appointment Scheduling</li>
                 <li>Facilitating Lead Qualification</li>
               </ul>
-
+              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
+                Features:
+              </p>
+              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold  ">
+                    Deployment across all channels
+                  </li>
+                </div>
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold  ">
+                    Support for diverse media formats and customization
+                  </li>
+                </div>
+                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
+                  <li className="font-semibold  ">
+                    Smooth transition to human agents
+                  </li>
+                </div>
+              </ul>
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400 w-3/4 mx-auto">
                 Pricing:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3 w-3/4 mx-auto">
+              <ul className="mb-5 flex flex-col sm:flex-row items-center justify-between my-3 w-3/4 mx-auto gap-6 sm:gap-0  ">
                 <div>
                   <li className="font-semibold text-2xl text-blue-700">
                     Starter Plan:
@@ -113,7 +132,7 @@ const ProductsPage = () => {
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
                 Features:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3">
+              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
                 <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
                   <li className="font-semibold  ">
                     Deployment across all channels
@@ -134,7 +153,7 @@ const ProductsPage = () => {
               <p className="font-semibold text-4xl  border-b-2 p-4 border-b-blue-400 text-blue-600">
                 Applicable Industries:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3">
+              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
                 <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
                   <li className="font-semibold   ">E-commerce</li>
                 </div>
@@ -149,7 +168,7 @@ const ProductsPage = () => {
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
                 Pricing:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3">
+              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-6 sm:flex-row sm:gap-0">
                 <div>
                   <li className="font-semibold text-2xl text-blue-700">
                     Starter Plan:
@@ -185,8 +204,8 @@ const ProductsPage = () => {
       )}
 
       <section className="py-12 px-4 bg-white">
-        <div className="grid grid-cols-1 ">
-          <div className="flex flex-col w-full pl-10  justify-center items-center">
+        <div className="">
+          <div className="flex flex-col w-full pl-0 sm:pl-10  justify-center items-center">
             <h2 className="text-3xl font-semibold mb-8 text-blue-700">
               Custom AI Agents
             </h2>
@@ -207,7 +226,7 @@ const ProductsPage = () => {
         </div>
         <AliceCarousel
           mouseTracking
-          autoPlay
+          // autoPlay
           autoPlayInterval={3000}
           buttonsDisabled={true}
           disableDotsControls={false}
@@ -220,9 +239,9 @@ const ProductsPage = () => {
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
-            <div className="flex justify-between w-full h-fit py-10 px-5 gap-28">
+            <div className="flex justify-between w-full h-fit py-10 px-5 gap-10 lg:gap-28">
               <div className="flex flex-col gap-16 ">
-                <h1 className="text-3xl text-white">
+                <h1 className=" text-xl lg:text-3xl text-white">
                   "Property 24X7 has made us more efficient,allowing us to grow
                   without increasing staffing."
                 </h1>
@@ -235,7 +254,7 @@ const ProductsPage = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-16 ">
-                <h1 className="text-3xl text-white">
+                <h1 className="text-xl lg:text-3xl text-white">
                   "Property 24X7 has made us more efficient,allowing us to grow
                   without increasing staffing."
                 </h1>

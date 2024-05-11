@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className={`w-full footer-box fixed z-50 bg-transparent`}>
-      <nav className={` shadow-2xl fixed z-50 w-full `}>
+      <nav className={`  fixed z-50 w-full `}>
         <div
           className="flex items-center justify-between text-white"
           style={{

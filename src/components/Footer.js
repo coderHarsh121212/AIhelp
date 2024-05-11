@@ -31,10 +31,10 @@ const Footer = () => {
       }}
     >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Navigation</h3>
-            <ul className=" flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <ul className=" grid grid-cols-2 items-center justify-center gap-2 sm:flex sm:gap-7">
               <li>
                 <a href="#" className="hover:hover-nav">
                   Products
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Social Media</h3>
+            <h3 className="text-lg font-semibold mb-1 mt-4">Social Media</h3>
             <ul className="flex space-x-4 items-center justify-center">
               <FacebookIcon />
               <InstagramLogo />
@@ -68,14 +68,14 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact & Support</h3>
+            <h3 className="text-lg font-semibold mb-1 mt-2">Contact & Support</h3>
             <p className="hover:hover-nav">Email: support@example.com</p>
             <p className="hover:hover-nav">Phone: +1 (123) 456-7890</p>
             {/* Add more contact details as needed */}
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold mb-1 mt-2">Legal</h3>
+            <ul className=" flex flex-row sm:flex-col justify-between">
               <li>
                 <a href="#" className="hover:hover-nav">
                   Terms of Service
