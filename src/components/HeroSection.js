@@ -9,7 +9,7 @@ const AISection = () => {
       >
         <div className="container mx-auto px-4 mt-40 text-white">
           <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="md:w-1/2">
+            <div className="md:w-3/4 lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Transform Your <span className="">Business</span> with
                 Intelligent <span className="">AI</span> Agents
@@ -19,7 +19,7 @@ const AISection = () => {
                 satisfaction by 30%, slash support expenditures by 40%, and
                 propel revenue expansion.
               </h3>
-              <div className="flex flex-col md:flex-row  md:space-x-4 w-full justify-center">
+              <div className="flex flex-col md:flex-row  md:space-x-4 w-3/4 justify-center gap-5 mx-auto md:w-full">
                 <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out">
                   Schedule a Demo
                 </button>
@@ -31,7 +31,7 @@ const AISection = () => {
           </div>
         </div>
       </section>
-      <div className="mt-1 border-2 rounded border-blue-500 w-[80%] h-[20%] mx-auto">
+      <div className="mt-1 border-2 rounded border-blue-500 w-[80%] h-[30%] mx-auto">
         {/* Video */}
         <iframe
           className="w-full h-64 md:h-96 rounded shadow-md"
@@ -39,7 +39,7 @@ const AISection = () => {
           title="AI Agents in Action"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </>
