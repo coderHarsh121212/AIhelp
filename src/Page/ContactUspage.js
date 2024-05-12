@@ -12,7 +12,7 @@ const ContactUspage = () => {
      <div className=" mx-auto py-20">
         <section className="py-12 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center">
-            <div className="w-full  px-4 mb-8 ">
+            <div className="w-full  px-4 mbx-8 ">
               <div className=" rounded-lg shadow-2xl p-6 h-64">
                 <img
                   src="https://westoryboard.com/wp-content/uploads/2023/03/Mask-group-46.png"

@@ -154,7 +154,7 @@ const Navbar = () => {
               ? `url(${AboutImage})`
               : ""
         }}
-        className={`md:hidden fixed w-1/2 h-screen bg-cover bg-center text-white top-20 flex flex-col right-0 gap-8 py-9 custom-transition ${
+        className={`md:hidden fixed w-1/2 h-fit bg-cover bg-center text-white top-20 flex flex-col right-0 gap-8 py-9 custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
       >
