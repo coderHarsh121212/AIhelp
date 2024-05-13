@@ -44,7 +44,7 @@ const ProductsPage = () => {
         </button>
       </div>
       {showChat ? (
-        <section className="py-12 px-4 bg-white">
+        <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
           <div className="grid grid-cols-1 justify-center items-center  ">
             <div className="flex flex-col">
               <h2 className="text-3xl font-semibold mb-5 text-blue-500">
@@ -63,32 +63,92 @@ const ProductsPage = () => {
               <p className="mb-5 text-blue-500">
                 Applications across various industries:
               </p>
-              <ul className="mb-5 text-blue-600">
-                <li>Enhancing Customer Support</li>
-                <li>Streamlining Appointment Scheduling</li>
-                <li>Facilitating Lead Qualification</li>
-              </ul>
-              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-                Features:
-              </p>
-              <FeatureSection/>
-           <FeatureSection/>
-           <FeatureSection/>
-              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400 w-3/4 mx-auto">
+
+              <p className="font-semibold text-4xl text-blue-700 ">Features:</p>
+              <div className="flex gap-6 flex-col  mt-4">
+                <section className=" py-12">
+                  <div className="container mx-auto flex flex-wrap items-center justify-center">
+                    <div className="w-full md:w-1/2 px-4">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="pic"
+                      ></img>
+                      <div className="relative overflow-hidden rounded-lg shadow-lg">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4">
+                      <div className="text-center md:text-left">
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">
+                          Enhancing Customer Support
+                        </h2>
+                        <p>
+                          Unlocking Seamless Assistance: Innovations to Elevate
+                          Customer Support Experience."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section className=" py-12">
+                  <div className="container mx-auto flex flex-wrap flex-row-reverse items-center justify-center">
+                    <div className="w-full md:w-1/2 px-4">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="pic"
+                      ></img>
+                      <div className="relative overflow-hidden rounded-lg shadow-lg">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4">
+                      <div className="text-center md:text-left">
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">
+                          Streamlining Appointment Scheduling
+                        </h2>
+                        <p>
+                          Effortlessly coordinate your calendar with our
+                          streamlined appointment scheduling solution. Say
+                          goodbye to confusion and missed meetings, and hello to
+                          efficiency."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section className=" py-12">
+                  <div className="container mx-auto flex flex-wrap items-center justify-center">
+                    <div className="w-full md:w-1/2 px-4">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="pic"
+                      ></img>
+                      <div className="relative overflow-hidden rounded-lg shadow-lg">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4">
+                      <div className="text-center md:text-left">
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">
+                          Facilitating Lead Qualification
+                        </h2>
+                        <p>
+                          Streamlining Lead Qualification: Effective Strategies
+                          for Efficient Sales Pipelines."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <p className="font-semibold text-4xl text-blue-700  w-3/4 mx-auto">
                 Pricing:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
-              <PricingCard/>
-              <PricingCard/>
-              <PricingCard/>
+                <PricingCard />
+                <PricingCard />
+                <PricingCard />
               </div>
-            </div>
-            <div>
-              <img
-                src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                alt="AI Chatbots"
-                className="mx-auto  mt-12"
-              />
             </div>
           </div>
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8 ">
@@ -106,14 +166,88 @@ const ProductsPage = () => {
                 Interact with clients through personalized, context-sensitive
                 chatbots across various platforms.
               </p>
-              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-                Features:
-              </p>
-              <FeatureSection/>
-           <FeatureSection/>
-           <FeatureSection/>
-
-              <p className="font-semibold text-4xl  border-b-2 p-4 border-b-blue-400 text-blue-600">
+              <p className="font-semibold text-4xl text-blue-700 ">Features:</p>
+              <div className="flex gap-6 flex-col  mt-4">
+                <section className=" py-12">
+                  <div className="container mx-auto flex flex-wrap items-center justify-center">
+                    <div className="w-full md:w-1/2 px-4">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="pic"
+                      ></img>
+                      <div className="relative overflow-hidden rounded-lg shadow-lg">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4">
+                      <div className="text-center md:text-left">
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">
+                          Deployment across all channels
+                        </h2>
+                        <p>
+                          Maximize your reach and engagement with seamless
+                          deployment across all channels - from social media
+                          platforms to email newsletters and beyond. Amplify
+                          your message effortlessly and connect with your
+                          audience wherever they are
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section className=" py-12">
+                  <div className="container mx-auto flex flex-wrap flex-row-reverse items-center justify-center">
+                    <div className="w-full md:w-1/2 px-4">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="pic"
+                      ></img>
+                      <div className="relative overflow-hidden rounded-lg shadow-lg">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4">
+                      <div className="text-center md:text-left">
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">
+                          Support for diverse media formats and customization
+                        </h2>
+                        <p>
+                          Unlock creativity with our robust support for diverse
+                          media formats and customizable options, empowering you
+                          to craft content that resonates across platforms and
+                          engages your audience like never before
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section className=" py-12">
+                  <div className="container mx-auto flex flex-wrap items-center justify-center">
+                    <div className="w-full md:w-1/2 px-4">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="pic"
+                      ></img>
+                      <div className="relative overflow-hidden rounded-lg shadow-lg">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4">
+                      <div className="text-center md:text-left">
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">
+                          Smooth transition to human agents
+                        </h2>
+                        <p>
+                          Seamlessly switch to human support for personalized
+                          assistance, ensuring a smooth transition from
+                          automated services to live agents
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <p className="font-semibold text-4xl   text-blue-600">
                 Applicable Industries:
               </p>
               <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
@@ -128,21 +262,12 @@ const ProductsPage = () => {
                 </div>
               </ul>
 
-              <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
-                Pricing:
-              </p>
+              <p className="font-semibold text-4xl text-blue-700 ">Pricing:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
-              <PricingCard/>
-              <PricingCard/>
-              <PricingCard/>
+                <PricingCard />
+                <PricingCard />
+                <PricingCard />
               </div>
-            </div>
-            <div>
-              <img
-                src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                alt="Tailored AI Agents"
-                className="mx-auto w-64 mt-12"
-              />
             </div>
           </div>
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8">
