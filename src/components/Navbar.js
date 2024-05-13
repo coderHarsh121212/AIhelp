@@ -10,7 +10,7 @@ const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
   const location = useLocation();
-const [showdrop,setShowdrop] = useState(false)
+  const [showdrop, setShowdrop] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -83,39 +83,68 @@ const [showdrop,setShowdrop] = useState(false)
               About US
             </NavLink>
             <NavLink
-              to="/Products"
+              to="/Products/:id"
               className={` relative text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
-              onClick={() => navigate("/Products")}
               isactive={() => location.pathname === "/Products"}
               style={{
                 color: location.pathname === "/Products" ? "#240ada" : "inherit"
               }}
-              onMouseEnter={()=>setShowdrop(!showdrop)}
-              onMouseLeave={()=>setShowdrop(!showdrop)}
+              onMouseEnter={() => setShowdrop(!showdrop)}
+              onMouseLeave={() => setShowdrop(!showdrop)}
             >
               Products
-           {showdrop&&   <div
-                className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded"
-                style={{
-                  background:
-                    location.pathname === "/" || location.pathname === "/home"
-                      ? ` url(${homeImage})`
-                      : location.pathname === "/aboutUs"
-                      ? `url(${AboutImage})`
-                      : location.pathname === "/Products"
-                      ? `url(${ProductImage})`
-                      : location.pathname === "/industry"
-                      ? `url(${IndustryImage})`
-                      : location.pathname === "/contactus"
-                      ? `url(${AboutImage})`
-                      : ""
-                }}
-              >
-                <a className="text-white hover:text-blue-500" >AI Voice</a>
-                <a className="text-white hover:text-blue-500" >AI Chat</a>
-              </div>}
+              {showdrop && (
+                <div
+                  className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded"
+                  style={{
+                    background:
+                      location.pathname === "/" || location.pathname === "/home"
+                        ? ` url(${homeImage})`
+                        : location.pathname === "/aboutUs"
+                        ? `url(${AboutImage})`
+                        : location.pathname === "/Products"
+                        ? `url(${ProductImage})`
+                        : location.pathname === "/industry"
+                        ? `url(${IndustryImage})`
+                        : location.pathname === "/contactus"
+                        ? `url(${AboutImage})`
+                        : ""
+                  }}
+                >
+                  <NavLink
+                    to="/Products/AIVoice"
+                    className={` relative text-${
+                      scrollY > 0 ? "white hover:text-blue-500" : "black"
+                    } hover:hover-nav`}
+                    isactive={() => location.pathname === "/Products/AIVoice"}
+                    style={{
+                      color:
+                        location.pathname === "/Products/AIVoice"
+                          ? "#240ada"
+                          : "inherit"
+                    }}
+                  >
+                    AI Voice
+                  </NavLink>
+                  <NavLink
+                    to="/Products/AIChat"
+                    className={` relative text-${
+                      scrollY > 0 ? "white hover:text-blue-500" : "black"
+                    } hover:hover-nav`}
+                    isactive={() => location.pathname === "/Products/AIChat"}
+                    style={{
+                      color:
+                        location.pathname === "/Products/AIChat"
+                          ? "#240ada"
+                          : "inherit"
+                    }}
+                  >
+                    AI Chat
+                  </NavLink>
+                </div>
+              )}
             </NavLink>
             <NavLink
               to="/industry"

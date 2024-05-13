@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import aboutimg from "../images/image.png";
 const AISection = () => {
+  const navigate= useNavigate()
   return (
     <>
       <section
@@ -20,10 +22,10 @@ const AISection = () => {
                 propel revenue expansion.
               </h3>
               <div className="flex flex-col md:flex-row  md:space-x-4 w-3/4 justify-center gap-5 mx-auto md:w-full">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out" onClick={()=>navigate("/scheduleDemo")}>
                   Schedule a Demo
                 </button>
-                <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out">
+                <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out" onClick={()=>navigate("/freetrial")}>
                   Get Started with a Free Trial
                 </button>
               </div>

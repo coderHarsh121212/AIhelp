@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import image4 from '../images/image4.jpeg'
 const CallToActionSection = () => {
+  const navigate = useNavigate()
   return (
     <section className="py-12 px-4 ">
       <div className="max-w-7xl mx-auto">
@@ -9,10 +11,10 @@ const CallToActionSection = () => {
           Join numerous enterprises that have reaped tangible benefits from our AI Agent SaaS. Take the first step today.
         </p>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded mb-4 md:mb-0 md:mr-4">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded mb-4 md:mb-0 md:mr-4" onClick={()=>navigate("/freetrial")}>
             Request a Demo
           </button>
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded" onClick={()=>navigate("/freetrial")}>
             Start Free Trial
           </button>
         </div>
@@ -27,7 +29,7 @@ const CallToActionSection = () => {
             author="Jane Smith, Company ABC"
           />
         </div>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded mx-auto block">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded mx-auto block" onClick={()=>navigate("/getStarted")}>
           Get Started
         </button>
       </div>

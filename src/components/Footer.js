@@ -27,7 +27,7 @@ const Footer = () => {
             ? `url(${IndustryImage})`
             : location.pathname === "/contactus"
             ? `url(${AboutImage})`
-            : ""
+            : "black"
       }}
     >
       <div className="w-full  lg:px-32 flex  flex-wrap items-center justify-center lg:justify-between">

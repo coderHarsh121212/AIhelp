@@ -4,8 +4,10 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import aboutimg1 from "../images/achievements.png";
 import PricingCard from "../components/Pricing";
-import FeatureSection from "../components/Feature";
+import { useParams } from "react-router-dom";
+
 const ProductsPage = () => {
+  const {id} = useParams()
   const [showChat, setShowChat] = useState(true);
   return (
     <div className="min-h-screen">
@@ -25,25 +27,8 @@ const ProductsPage = () => {
           </p>
         </div>
       </header>
-      <div className="flex w-full items-center justify-center my-5 gap-5">
-        <button
-          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${
-            showChat && "bg-blue-500 text-white"
-          }`}
-          onClick={() => setShowChat(!showChat)}
-        >
-          VOICEBOTS
-        </button>
-        <button
-          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${
-            !showChat && "bg-blue-500 text-white"
-          }`}
-          onClick={() => setShowChat(!showChat)}
-        >
-          CHATBOTS
-        </button>
-      </div>
-      {showChat ? (
+     
+      {id=="AIVoice" ? (
         <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
           <div className="grid grid-cols-1 justify-center items-center  ">
             <div className="flex flex-col">
@@ -70,7 +55,7 @@ const ProductsPage = () => {
                   <div className="container mx-auto flex flex-wrap items-center justify-center">
                     <div className="w-full md:w-1/2 px-4">
                       <img
-                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        src="https://i0.wp.com/daktela.com/wp-content/uploads/2023/11/Blog_Voicebot.webp?fit=1200%2C675&ssl=1"
                         alt="pic"
                       ></img>
                       <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -94,7 +79,7 @@ const ProductsPage = () => {
                   <div className="container mx-auto flex flex-wrap flex-row-reverse items-center justify-center">
                     <div className="w-full md:w-1/2 px-4">
                       <img
-                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-2hSMmMj3EijElrd3yzBuYMliSSSIVBAR6dCM6u7tqvvOmxn_eAfXoxMvAKluMhBKYeA&usqp=CAU"
                         alt="pic"
                       ></img>
                       <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -120,7 +105,7 @@ const ProductsPage = () => {
                   <div className="container mx-auto flex flex-wrap items-center justify-center">
                     <div className="w-full md:w-1/2 px-4">
                       <img
-                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        src="https://content.cloudthat.com/resources/wp-content/uploads/2022/11/Voice_bot.png"
                         alt="pic"
                       ></img>
                       <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -172,7 +157,7 @@ const ProductsPage = () => {
                   <div className="container mx-auto flex flex-wrap items-center justify-center">
                     <div className="w-full md:w-1/2 px-4">
                       <img
-                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        src="https://6187708.fs1.hubspotusercontent-na1.net/hubfs/6187708/chatbot2-2.jpeg"
                         alt="pic"
                       ></img>
                       <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -199,7 +184,7 @@ const ProductsPage = () => {
                   <div className="container mx-auto flex flex-wrap flex-row-reverse items-center justify-center">
                     <div className="w-full md:w-1/2 px-4">
                       <img
-                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbGXVPoyPmzxORGf41NyHMNdRnWrxXfMEfYu0plUKe-igYQlVS-Zb_jvF22Vna0o2MTw8&usqp=CAU"
                         alt="pic"
                       ></img>
                       <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -225,7 +210,7 @@ const ProductsPage = () => {
                   <div className="container mx-auto flex flex-wrap items-center justify-center">
                     <div className="w-full md:w-1/2 px-4">
                       <img
-                        src="https://th.bing.com/th/id/OIP.lkFFzps54G3mXGp_BrKsswHaFd?w=247&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        src="https://media.licdn.com/dms/image/D5612AQHASP8IXNWO6A/article-cover_image-shrink_720_1280/0/1710217981464?e=2147483647&v=beta&t=mb0LIpxzBSBA3TFNHSjywA89EBNYDbghjkPh5FGzhxg"
                         alt="pic"
                       ></img>
                       <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -247,7 +232,6 @@ const ProductsPage = () => {
                   </div>
                 </section>
               </div>
-            
 
               <p className="font-semibold text-4xl text-blue-700 ">Pricing:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
