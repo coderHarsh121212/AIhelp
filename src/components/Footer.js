@@ -14,7 +14,7 @@ const Footer = () => {
   const location = useLocation();
   return (
     <footer
-      className=" text-white py-8 footer-box"
+      className=" text-white py-8 "
       style={{
         background:
           location.pathname === "/" || location.pathname === "/home"
@@ -30,66 +30,55 @@ const Footer = () => {
             : ""
       }}
     >
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-2 gap-5 sm:grid-cols-2  sm:gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Navigation</h3>
-            <ul className=" grid grid-cols-2 items-center justify-center gap-1 sm:flex sm:gap-7">
-              <li>
-                <a href="#" className="hover:hover-nav">
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:hover-nav"></a>
-              </li>
-              <li>
-                <a href="#" className="hover:hover-nav"></a>
-              </li>
-              <li>
-                <a href="#" className="hover:hover-nav"></a>
-              </li>
-            </ul>
+      <div className="w-full  lg:px-32 flex  flex-wrap items-center justify-center lg:justify-between">
+        <div className="flex flex-col gap-1 ">
+          <div className="flex gap- items-center justify-center">
+            <img src="https://static.wixstatic.com/media/30aef6_b482c098bfa543898242124184eea151%7Emv2.png/v1/fit/w_2500,h_1330,al_c/30aef6_b482c098bfa543898242124184eea151%7Emv2.png" alt="logo" className="w-14 h-14"></img>
+            <p>Comapny Name</p>
           </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-1 mt-4">Social Media</h3>
-            <ul className="flex space-x-4 items-center justify-center">
-              <FacebookIcon />
-              <InstagramLogo />
-              <YoutubeLogo />
-              <LinkedInLogo />
-              {/* Add more social media icons as needed */}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-1 mt-1">
-              Contact & Support
-            </h3>
-            <p className="hover:hover-nav">Email: support@example.com</p>
-            <p className="hover:hover-nav">Phone: +1 (123) 456-7890</p>
-            {/* Add more contact details as needed */}
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-1 mt-1">Legal</h3>
-            <ul className=" flex flex-row sm:flex-col justify-between">
-              <li>
-                <a href="#" className="hover:hover-nav">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:hover-nav">
-                  Privacy Policy
-                </a>
-              </li>
-            </ul>
+          <p>Radical Aftermarket Services Pvt. Ltd</p>
+
+          <div className="flex flex-col gap-1">
+            <p>Adresss</p>
+            <p>Phone</p>
+            <p>email</p>
           </div>
         </div>
-        <div className="mt-3 text-center">
-          <p>
-            &copy; 2024 <span className="hover-nav">Your Company</span>. All
-            rights reserved.
-          </p>
+<div className="flex justify-between lg:w-[60%] w-full mx-5 flex-wrap">
+        <div className="flex flex-col gap-1">
+          <h1>Quick Links</h1>
+          <a>Home</a>
+          <a>About Us</a>
+          <a>Products</a>
+          <a>Blogs</a>
+          <a>Industries</a>
+          <a>Contact</a>
+        </div>
+        <div className="flex flex-col gap-1">
+          <h1>Quick Links</h1>
+          <a>Home</a>
+          <a>About Us</a>
+          <a>Products</a>
+          <a>Blogs</a>
+          <a>Industries</a>
+          <a>Contact</a>
+        </div>
+        <div className="flex flex-col gap-1">
+          <h1>Quick Links</h1>
+          <a>Home</a>
+          <a>About Us</a>
+          <a>Products</a>
+          <a>Blogs</a>
+          <a>Industries</a>
+          <a>Contact</a>
+        </div>
+        <div className="flex flex-col gap-1">
+          <h1>Social Links</h1>
+          <div className="flex justify-between">
+         <LinkedInLogo/>
+         <YoutubeLogo/>
+         </div>
+          </div>
         </div>
       </div>
     </footer>

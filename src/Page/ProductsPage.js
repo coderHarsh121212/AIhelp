@@ -3,6 +3,8 @@ import aboutimg from "../images/bg3.png";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import aboutimg1 from "../images/achievements.png";
+import PricingCard from "../components/Pricing";
+import FeatureSection from "../components/Feature";
 const ProductsPage = () => {
   const [showChat, setShowChat] = useState(true);
   return (
@@ -69,46 +71,17 @@ const ProductsPage = () => {
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
                 Features:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold  ">
-                    Deployment across all channels
-                  </li>
-                </div>
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold  ">
-                    Support for diverse media formats and customization
-                  </li>
-                </div>
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold  ">
-                    Smooth transition to human agents
-                  </li>
-                </div>
-              </ul>
+              <FeatureSection/>
+           <FeatureSection/>
+           <FeatureSection/>
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400 w-3/4 mx-auto">
                 Pricing:
               </p>
-              <ul className="mb-5 flex flex-col sm:flex-row items-center justify-between my-3 w-3/4 mx-auto gap-6 sm:gap-0  ">
-                <div>
-                  <li className="font-semibold text-2xl text-blue-700">
-                    Starter Plan:
-                  </li>
-                  <li className="text-blue-700">$499 per month</li>
-                </div>
-                <div>
-                  <li className="font-semibold text-2xl text-blue-700">
-                    Growth Plan:
-                  </li>
-                  <li className="text-blue-700">$1,499 per month</li>
-                </div>
-                <div>
-                  <li className="font-semibold text-2xl text-blue-700">
-                    Enterprise Plan:
-                  </li>
-                  <li className="text-blue-700">Tailored pricing</li>
-                </div>
-              </ul>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+              <PricingCard/>
+              <PricingCard/>
+              <PricingCard/>
+              </div>
             </div>
             <div>
               <img
@@ -136,23 +109,9 @@ const ProductsPage = () => {
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
                 Features:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold  ">
-                    Deployment across all channels
-                  </li>
-                </div>
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold  ">
-                    Support for diverse media formats and customization
-                  </li>
-                </div>
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold  ">
-                    Smooth transition to human agents
-                  </li>
-                </div>
-              </ul>
+              <FeatureSection/>
+           <FeatureSection/>
+           <FeatureSection/>
 
               <p className="font-semibold text-4xl  border-b-2 p-4 border-b-blue-400 text-blue-600">
                 Applicable Industries:
@@ -172,26 +131,11 @@ const ProductsPage = () => {
               <p className="font-semibold text-4xl text-blue-700 border-b-2 p-4 border-b-blue-400">
                 Pricing:
               </p>
-              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-6 sm:flex-row sm:gap-0">
-                <div>
-                  <li className="font-semibold text-2xl text-blue-700">
-                    Starter Plan:
-                  </li>
-                  <li className="text-blue-700">$499 per month</li>
-                </div>
-                <div>
-                  <li className="font-semibold text-2xl text-blue-700">
-                    Growth Plan:
-                  </li>
-                  <li className="text-blue-700">$1,499 per month</li>
-                </div>
-                <div>
-                  <li className="font-semibold text-2xl text-blue-700">
-                    Enterprise Plan:
-                  </li>
-                  <li className="text-blue-700">Tailored pricing</li>
-                </div>
-              </ul>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+              <PricingCard/>
+              <PricingCard/>
+              <PricingCard/>
+              </div>
             </div>
             <div>
               <img

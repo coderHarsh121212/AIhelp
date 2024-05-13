@@ -26,56 +26,60 @@ const AboutUsSection = () => {
         <h3 className="text-2xl  lg:text-5xl font-semibold mb-8 text-center text-blue-500 ">
           Core Values
         </h3>
-        <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  items-center mx-auto">
-          <div
-            className="border-2 p-4 font-semibold  font-serif rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col bg-cover bg-center bg-no-repeat animate-pulse "
-            style={{
-              backgroundImage: `url(https://th.bing.com/th/id/OIP.GLZY4jLA5SCM6lNcWA5IXwAAAA?rs=1&pid=ImgDetMain)`
-            }}
-          >
-            <span class="font-extrabold ">Innovation:</span> Continuously pushing
-            AI boundaries to pioneer transformative solutions.
+        <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1   items-center mx-auto">
+          <div className=" w-full min-h-36 border-2 flex">
+            <div className="w-1/4 bg-blue-400 text-7xl flex items-center justify-center text-white rounded-md">
+              01
+            </div>
+            <div className="flex flex-col justify-center px-10">
+              <span class="font-extrabold ">Innovation:</span> Continuously
+              pushing AI boundaries to pioneer transformative solutions.
+            </div>
           </div>
-
-          <li
-            className="border-2 p-4  font-semibold  font-serif rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col bg-cover bg-center bg-no-repeat animate-pulse "
-            style={{
-              backgroundImage: `url(https://th.bing.com/th?id=OIP.12rHGDpFqQXMyIyeWICRRgHaDP&w=349&h=153&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2)`
-            }}
-          >
-            <span className="font-extrabold">Excellence:</span> Pursuing
-            unparalleled quality and performance across all endeavors.
-          </li>
-          <li
-            className="border-2 p-4 font-serif font-semibold  rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col animate-pulse "
-            style={{
-              backgroundImage: `url(https://th.bing.com/th?id=OIP.IHMqTxCJv5cUyMnB0e6LAAHaDn&w=350&h=170&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2)`
-            }}
-          >
-            <span className="font-extrabold">Customer-Focus:</span> Placing
-            customers at the core, tailoring solutions to their distinct
-            requirements.
-          </li>
-          <li
-            className="border-2 p-4 font-serif font-semibold  rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col bg-cover bg-center bg-no-repeat animate-pulse "
-            style={{
-              backgroundImage: `url(https://th.bing.com/th/id/OIP.p3bucIFmpr_MpU63NBKBkAHaE8?rs=1&pid=ImgDetMain)`
-            }}
-          >
-            <span className="font-extrabold">Collaboration:</span> Cultivating a
-            collaborative environment, fostering teamwork, partnerships, and
-            knowledge exchange.
-          </li>
-          <li
-            className="border-2 p-4 font-serif font-semibold  rounded-md list-none clippathoctagon h-52 w-full md:w-72 text-center px-10 flex  flex-col  bg-cover bg-center bg-no-repeat animate-pulse "
-            style={{
-              backgroundImage: `url(https://th.bing.com/th/id/OIP.tqpleDOR6bWNWJ4KwilSbwHaEK?rs=1&pid=ImgDetMain)`
-            }}
-          >
-            <span className="font-semibold">Integrity:</span> Upholding the
+          <div className=" w-full min-h-36 border-2 flex">
+            <div className="w-1/4 bg-blue-400 text-7xl flex items-center justify-center text-white rounded-md">
+              02
+            </div>
+            <div className="flex flex-col justify-center px-10">
+              <span class="font-extrabold ">Integrity:</span> Upholding the
             utmost ethical standards, ensuring transparency, privacy, and
             security.
-          </li>
+            </div>
+          </div>
+          <div className=" w-full min-h-36 border-2 flex">
+            <div className="w-1/4 bg-blue-400 text-7xl flex items-center justify-center text-white rounded-md">
+              03
+            </div>
+            <div className="flex flex-col justify-center px-10">
+              <span class="font-extrabold ">Collaboration:</span> Cultivating a
+            collaborative environment, fostering teamwork, partnerships, and
+            knowledge exchange.
+            </div>
+          </div>
+          <div className=" w-full min-h-36 border-2 flex">
+            <div className="w-1/4 bg-blue-400 text-7xl flex items-center justify-center text-white rounded-md">
+              04
+            </div>
+            <div className="flex flex-col justify-center px-10">
+              <span class="font-extrabold ">Customer-Focus:</span> Placing
+            customers at the core, tailoring solutions to their distinct
+            requirements.
+            </div>
+          </div>
+          <div className=" w-full min-h-36 border-2 flex">
+            <div className="w-1/4 bg-blue-400 text-7xl flex items-center justify-center text-white rounded-md">
+              05
+            </div>
+            <div className="flex flex-col justify-center px-10">
+              <span class="font-extrabold ">Excellence:</span>  Pursuing
+            unparalleled quality and performance across all endeavors.
+            </div>
+          </div>
+
+        
+      
+      
+      
         </ul>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-5 w-[90%] mx-auto">
