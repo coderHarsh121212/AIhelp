@@ -247,20 +247,7 @@ const ProductsPage = () => {
                   </div>
                 </section>
               </div>
-              <p className="font-semibold text-4xl   text-blue-600">
-                Applicable Industries:
-              </p>
-              <ul className="mb-5 flex items-center justify-between my-3 flex-col gap-2 sm:flex-row sm:gap-0">
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold   ">E-commerce</li>
-                </div>
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold   ">Banking and Finance</li>
-                </div>
-                <div className="octagonShape w-40 h-40 flex justify-center items-center bg-blue-400 text-white p-3 animate-pulse">
-                  <li className="font-semibold ">Healthcare</li>
-                </div>
-              </ul>
+            
 
               <p className="font-semibold text-4xl text-blue-700 ">Pricing:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
