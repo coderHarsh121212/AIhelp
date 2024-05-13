@@ -7,7 +7,7 @@ const AISection = () => {
         className="py-20  bg-cover bg-no-repeat w-full h-3/4"
         style={{ backgroundImage: `url(${aboutimg})` }}
       >
-        <div className="container mx-auto px-4 mt-40 text-white">
+        <div className="container mx-auto px-4 mt-20 lg:mt-40 text-white">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="md:w-3/4 lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">

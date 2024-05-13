@@ -25,13 +25,17 @@ const ProductsPage = () => {
       </header>
       <div className="flex w-full items-center justify-center my-5 gap-5">
         <button
-          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${showChat&&"bg-blue-500 text-white"}`}
+          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${
+            showChat && "bg-blue-500 text-white"
+          }`}
           onClick={() => setShowChat(!showChat)}
         >
           VOICEBOTS
         </button>
         <button
-          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${!showChat&&"bg-blue-500 text-white"}`}
+          className={`px-3 py-1 border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 transition-all rounded-md ${
+            !showChat && "bg-blue-500 text-white"
+          }`}
           onClick={() => setShowChat(!showChat)}
         >
           CHATBOTS
@@ -239,22 +243,9 @@ const ProductsPage = () => {
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
-            <div className="flex justify-between w-full h-fit py-10 px-5 gap-10 lg:gap-28">
+            <div className="flex justify-center w-full h-fit py-10 px-5 gap-10 ">
               <div className="flex flex-col gap-16 ">
                 <h1 className=" text-xl lg:text-3xl text-white">
-                  "Property 24X7 has made us more efficient,allowing us to grow
-                  without increasing staffing."
-                </h1>
-                <div className="flex flex-col gap-3 text-blue-600">
-                  <h1 className="text-xl font-semibold">Nikhil Kumar</h1>
-                  <div className="flex flex-col gap-1">
-                    NealKanth Real State
-                    <p>48,000+ units</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col gap-16 ">
-                <h1 className="text-xl lg:text-3xl text-white">
                   "Property 24X7 has made us more efficient,allowing us to grow
                   without increasing staffing."
                 </h1>
@@ -276,20 +267,7 @@ const ProductsPage = () => {
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
-            <div className="flex justify-between w-full h-fit py-10 px-5 gap-28">
-              <div className="flex flex-col gap-16 ">
-                <h1 className="text-3xl text-white">
-                  "Property 24X7 has made us more efficient,allowing us to grow
-                  without increasing staffing."
-                </h1>
-                <div className="flex flex-col gap-3 text-blue-600">
-                  <h1 className="text-xl font-semibold">Nikhil Kumar</h1>
-                  <div className="flex flex-col gap-1">
-                    NealKanth Real State
-                    <p>48,000+ units</p>
-                  </div>
-                </div>
-              </div>
+            <div className="flex justify-center w-full h-fit py-10 px-5 ">
               <div className="flex flex-col gap-16 ">
                 <h1 className="text-3xl text-white">
                   "Property 24X7 has made us more efficient,allowing us to grow
@@ -313,20 +291,7 @@ const ProductsPage = () => {
             <h1 className="uppercase text-3xl text-violet-600 font-semibold">
               Our Success Stories
             </h1>
-            <div className="flex justify-between w-full h-fit py-10 px-5 gap-28">
-              <div className="flex flex-col gap-16 ">
-                <h1 className="text-3xl text-white">
-                  "Property 24X7 has made us more efficient,allowing us to grow
-                  without increasing staffing."
-                </h1>
-                <div className="flex flex-col gap-3 text-blue-600">
-                  <h1 className="text-xl font-semibold">Nikhil Kumar</h1>
-                  <div className="flex flex-col gap-1">
-                    NealKanth Real State
-                    <p>48,000+ units</p>
-                  </div>
-                </div>
-              </div>
+            <div className="flex justify-center w-full h-fit py-10 px-5 ">
               <div className="flex flex-col gap-16 ">
                 <h1 className="text-3xl text-white">
                   "Property 24X7 has made us more efficient,allowing us to grow

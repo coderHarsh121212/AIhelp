@@ -32,9 +32,9 @@ const ContactUspage = () => {
                 />
                 <h4 className="text-lg font-semibold mb-2">Email Us</h4>
                 <p className="text-gray-700">
-                  abc@westoryboard.com
+                  abc@gmail.com
                   <br />
-                  abc@westoryboard.com
+                  abc@gmail.com
                 </p>
               </div>
             </div>

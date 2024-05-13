@@ -140,21 +140,8 @@ const Navbar = () => {
       </div>
       <div
         id="hiddenLinks"
-        style={{
-          background:
-            location.pathname === "/" || location.pathname === "/home"
-              ? ` url(${homeImage})`
-              : location.pathname === "/aboutUs"
-              ? `url(${AboutImage})`
-              : location.pathname === "/Products"
-              ? `url(${ProductImage})`
-              : location.pathname === "/industry"
-              ? `url(${IndustryImage})`
-              : location.pathname === "/contactus"
-              ? `url(${AboutImage})`
-              : ""
-        }}
-        className={`md:hidden fixed w-1/2 h-fit bg-cover bg-center text-white top-20 flex flex-col right-0 gap-8 py-9 custom-transition ${
+       
+        className={`md:hidden  bg-white fixed w-1/4 h-fit bg-cover bg-center text-black rounded-md top-20 flex flex-col right-0 gap-4 py-7 custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
       >
