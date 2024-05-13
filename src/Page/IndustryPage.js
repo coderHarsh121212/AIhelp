@@ -32,6 +32,21 @@ const IndustriesSection = () => {
       recordingUrl: "#",
       testCodeUrl: "#"
     },
+    {
+      name: "Educational management.",
+      recordingUrl: "#",
+      testCodeUrl: "#"
+    },
+    {
+      name: "Selling and buying old cars management",
+      recordingUrl: "#",
+      testCodeUrl: "#"
+    },
+    {
+      name: "Leadership program management.",
+      recordingUrl: "#",
+      testCodeUrl: "#"
+    },
     // Add additional applicable sectors as needed
   ];
 

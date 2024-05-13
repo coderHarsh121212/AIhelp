@@ -10,7 +10,7 @@ const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
   const location = useLocation();
-
+const [showdrop,setShowdrop] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -21,8 +21,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-
 
   return (
     <div className={`w-full footer-box fixed z-50 bg-transparent`}>
@@ -86,7 +84,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/Products"
-              className={`text-${
+              className={` relative text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/Products")}
@@ -94,8 +92,30 @@ const Navbar = () => {
               style={{
                 color: location.pathname === "/Products" ? "#240ada" : "inherit"
               }}
+              onMouseEnter={()=>setShowdrop(!showdrop)}
+              onMouseLeave={()=>setShowdrop(!showdrop)}
             >
               Products
+           {showdrop&&   <div
+                className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded"
+                style={{
+                  background:
+                    location.pathname === "/" || location.pathname === "/home"
+                      ? ` url(${homeImage})`
+                      : location.pathname === "/aboutUs"
+                      ? `url(${AboutImage})`
+                      : location.pathname === "/Products"
+                      ? `url(${ProductImage})`
+                      : location.pathname === "/industry"
+                      ? `url(${IndustryImage})`
+                      : location.pathname === "/contactus"
+                      ? `url(${AboutImage})`
+                      : ""
+                }}
+              >
+                <a className="text-white hover:text-blue-500" >AI Voice</a>
+                <a className="text-white hover:text-blue-500" >AI Chat</a>
+              </div>}
             </NavLink>
             <NavLink
               to="/industry"
@@ -140,7 +160,6 @@ const Navbar = () => {
       </div>
       <div
         id="hiddenLinks"
-       
         className={`md:hidden  bg-white fixed w-1/4 h-fit bg-cover bg-center text-black rounded-md top-20 flex flex-col right-0 gap-4 py-7 custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
