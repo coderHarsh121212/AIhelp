@@ -20,14 +20,22 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={` footer-box fixed z-50 bg-transparent w-[80%]  rounded-full mx-auto`}>
-      <nav className={`  fixed z-50 w-[80%]  rounded-full  left-24 lg:left-32  mt-6 shadow-2xl `}>
+    <div
+      className={` footer-box fixed z-50 bg-transparent w-[80%]  rounded-full mx-auto`}
+    >
+      <nav
+        className={`${
+          scrollY > 0
+            ? "white hover:text-blue-500 w-[79%] rounded-full  left-24 lg:left-32  mt-6 shadow-2xl"
+            : "black"
+        }  fixed z-50 w-[100%]  `}
+      >
         <div
           className="flex items-center justify-between text-black bg-no-repeat bg-cover rounded-full"
           style={{
             background:
               'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-              backgroundSize: 'cover'
+            backgroundSize: "cover"
           }}
         >
           <div className="flex items-center">
@@ -38,7 +46,7 @@ const Navbar = () => {
               crossOrigin="anonymous"
             />
           </div>
-          <div className="hidden md:flex items-center space-x-8 pr-10">
+          <div className={`hidden md:flex items-center space-x-8 pr-10 ${scrollY>0?"space-x-3":"space-x-5"}`}>
             <NavLink
               to="/"
               className={`p-2 text-${
@@ -52,7 +60,6 @@ const Navbar = () => {
                 color: location.pathname === "/" ? "#240ada" : "inherit",
                 background: location.pathname === "/" ? "#ffff" : "inherit",
                 fontWeight: location.pathname === "/" ? "700" : "inherit"
-            
               }}
             >
               Home
@@ -66,7 +73,8 @@ const Navbar = () => {
               isactive={() => location.pathname === "/aboutUs"}
               style={{
                 color: location.pathname === "/aboutUs" ? "#240ada" : "inherit",
-                background: location.pathname === "/aboutUs" ? "#ffff" : "inherit",
+                background:
+                  location.pathname === "/aboutUs" ? "#ffff" : "inherit",
                 fontWeight: location.pathname === "/aboutUs" ? "700" : "inherit"
               }}
             >
@@ -75,20 +83,18 @@ const Navbar = () => {
             <a
               className={`flex gap-1 relative  hover:hover-nav cursor-pointer transition-all`}
               style={{
-            
-                color: location.pathname === "/Products" ? "#240ada" : "inherit",
-                background: location.pathname === "/Products" ? "#ffff" : "inherit",
-                fontWeight: location.pathname === "/Products" ? "700" : "inherit"
+                color:
+                  location.pathname === "/Products" ? "#240ada" : "inherit",
+                background:
+                  location.pathname === "/Products" ? "#ffff" : "inherit",
+                fontWeight:
+                  location.pathname === "/Products" ? "700" : "inherit"
               }}
               onClick={() => setShowdrop(!showdrop)}
-             
             >
               Products{showdrop ? <CaretUp /> : <CaretDown />}
               {showdrop && (
-                <div
-                  className="bg-white absolute top-8  px-5  flex flex-col gap-5 py-3 rounded transition-all shadow-2xl"
-             
-                >
+                <div className="bg-white absolute top-8  px-5  flex flex-col gap-5 py-3 rounded transition-all shadow-2xl">
                   <div className="bg-transparent text-black  flex flex-col gap-2 w-52 text-lg">
                     <NavLink
                       to="/Products/AIVoice"
@@ -132,10 +138,12 @@ const Navbar = () => {
               onClick={() => navigate("/industry")}
               isactive={() => location.pathname === "/industry"}
               style={{
-                color: location.pathname === "/industry" ? "#240ada" : "inherit",
-                background: location.pathname === "/industry" ? "#ffff" : "inherit",
-                fontWeight: location.pathname === "/industry" ? "700" : "inherit"
-             
+                color:
+                  location.pathname === "/industry" ? "#240ada" : "inherit",
+                background:
+                  location.pathname === "/industry" ? "#ffff" : "inherit",
+                fontWeight:
+                  location.pathname === "/industry" ? "700" : "inherit"
               }}
             >
               Industry
@@ -148,14 +156,19 @@ const Navbar = () => {
               onClick={() => navigate("/contactus")}
               isactive={() => location.pathname === "/contactus"}
               style={{
-                color: location.pathname === "/contactus" ? "#240ada" : "inherit",
-                background: location.pathname === "/contactus" ? "#ffff" : "inherit",
-                fontWeight: location.pathname === "/contactus" ? "700" : "inherit"
-               
+                color:
+                  location.pathname === "/contactus" ? "#240ada" : "inherit",
+                background:
+                  location.pathname === "/contactus" ? "#ffff" : "inherit",
+                fontWeight:
+                  location.pathname === "/contactus" ? "700" : "inherit"
               }}
             >
               Contact Us
             </NavLink>
+            <button className="bg-green-400 px-5 py-1 rounded-md text-white">Login</button>
+            <button className="bg-blue-400 px-5 py-1 rounded-md text-white">Start for free</button>
+            <button className="bg-blue-400 px-5 py-1 rounded-md text-white">Schedule a Demo</button>
           </div>
         </div>
       </nav>
