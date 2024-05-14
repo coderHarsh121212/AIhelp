@@ -15,7 +15,8 @@ const ProductsPage = () => {
         className="py-48 px-4 text-center bg-white bg-cover bg-no-repeat"
         style={{
           background:
-            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+            backgroundSize: 'cover'
         }}
       >
         <div className="w-full sm:w-4/5 mx-auto">

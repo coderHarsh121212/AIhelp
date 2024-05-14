@@ -66,7 +66,8 @@ const IndustriesSection = () => {
         className="py-24 px-4 bg-gray-100"
         style={{
           background:
-            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+            backgroundSize: 'cover'
         }}
       >
         <div className="max-w-7xl mx-auto">

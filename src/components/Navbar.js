@@ -29,7 +29,8 @@ const Navbar = () => {
           className="flex items-center justify-between text-black bg-no-repeat bg-cover"
           style={{
             background:
-              'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+              'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+              backgroundSize: 'cover'
           }}
         >
           <div className="flex items-center">
@@ -86,7 +87,8 @@ const Navbar = () => {
                   className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded transition-all"
                   style={{
                     background:
-                      'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+                      'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+                      backgroundSize: 'cover'
                   }}
                 >
                   <div className="bg-transparent text-black shadow-2xl border-2 border-gray-500 flex flex-col gap-2 w-52 text-lg">
