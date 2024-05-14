@@ -1,17 +1,13 @@
 import React from "react";
-import {
-  FacebookIcon,
-  InstagramLogo,
-  LinkedInLogo,
-  YoutubeLogo
-} from "../icons/icons";
+import { LinkedInLogo, YoutubeLogo } from "../icons/icons";
 import homeImage from "../images/image.png";
 import AboutImage from "../images/bg1.png";
 import ProductImage from "../images/bg3.png";
 import IndustryImage from "../images/bg2.png";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 const Footer = () => {
   const location = useLocation();
+  const navigate=useNavigate()
   return (
     <footer
       className=" text-white py-8 "
@@ -30,13 +26,16 @@ const Footer = () => {
             : "black"
       }}
     >
-      <div className="w-full  lg:px-32 flex  flex-wrap items-center justify-center lg:justify-between">
+      <div className="w-full  px-5 flex  flex-wrap items-center justify-center lg:justify-between flex-col gap-5 lg:flex-row">
         <div className="flex flex-col gap-1 ">
-          <div className="flex gap- items-center justify-center">
-            <img src="https://static.wixstatic.com/media/30aef6_b482c098bfa543898242124184eea151%7Emv2.png/v1/fit/w_2500,h_1330,al_c/30aef6_b482c098bfa543898242124184eea151%7Emv2.png" alt="logo" className="w-14 h-14"></img>
-            <p>Comapny Name</p>
+          <div className="flex  items-center justify-center">
+            <img
+              src="https://static.wixstatic.com/media/30aef6_b482c098bfa543898242124184eea151%7Emv2.png/v1/fit/w_2500,h_1330,al_c/30aef6_b482c098bfa543898242124184eea151%7Emv2.png"
+              alt="logo"
+              className="w-20 h-20"
+            ></img>
+            <p className="text-3xl font-bold">Spark Wave</p>
           </div>
-          <p>Radical Aftermarket Services Pvt. Ltd</p>
 
           <div className="flex flex-col gap-1">
             <p>Adresss</p>
@@ -44,40 +43,37 @@ const Footer = () => {
             <p>email</p>
           </div>
         </div>
-<div className="flex justify-between lg:w-[60%] w-full mx-5 flex-wrap">
+
         <div className="flex flex-col gap-1">
-          <h1>Quick Links</h1>
-          <a>Home</a>
-          <a>About Us</a>
-          <a>Products</a>
-          <a>Blogs</a>
-          <a>Industries</a>
-          <a>Contact</a>
+          <h1 className="text-xl font-semibold lg:mb-3">Quick Links</h1>
+          <div className="flex  gap-10 flex-wrap">
+            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/")}>
+              Home
+            </a>
+            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/aboutUs")}>
+              About Us
+            </a>
+            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/Products/AIChat")}>
+              Chat AI
+            </a>
+            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/Products/AIVoice")}>
+              Voice AI
+            </a>
+
+            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/industry")}>
+              Industries
+            </a>
+            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/contactus")}>
+              Contact
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-1">
-          <h1>Quick Links</h1>
-          <a>Home</a>
-          <a>About Us</a>
-          <a>Products</a>
-          <a>Blogs</a>
-          <a>Industries</a>
-          <a>Contact</a>
-        </div>
-        <div className="flex flex-col gap-1">
-          <h1>Quick Links</h1>
-          <a>Home</a>
-          <a>About Us</a>
-          <a>Products</a>
-          <a>Blogs</a>
-          <a>Industries</a>
-          <a>Contact</a>
-        </div>
+
         <div className="flex flex-col gap-1">
           <h1>Social Links</h1>
           <div className="flex justify-between">
-         <LinkedInLogo/>
-         <YoutubeLogo/>
-         </div>
+            <LinkedInLogo />
+            <YoutubeLogo />
           </div>
         </div>
       </div>

@@ -113,6 +113,7 @@ const Navbar = () => {
                         : ""
                   }}
                 >
+                  <div className="bg-transparent text-white shadow-2xl border-2 border-gray-500 flex flex-col gap-2 w-52 text-lg">
                   <NavLink
                     to="/Products/AIVoice"
                     className={` relative text-${
@@ -143,6 +144,7 @@ const Navbar = () => {
                   >
                     AI Chat
                   </NavLink>
+                  </div>
                 </div>
               )}
             </NavLink>
