@@ -31,7 +31,7 @@ const Navbar = () => {
         }  fixed z-50 w-[100%]  `}
       >
         <div
-          className="flex items-center justify-between text-black bg-no-repeat bg-cover l"
+          className="flex items-center justify-between text-black bg-no-repeat bg-cover rounded-full"
           style={{
             background:
               'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
