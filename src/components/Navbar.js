@@ -44,7 +44,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8 pr-10">
             <NavLink
               to="/"
-              className={`text-${
+              className={`p-2 text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/")}
@@ -52,23 +52,25 @@ const Navbar = () => {
                 location.pathname === "/" || location.pathname === "/home"
               }
               style={{
-                color:
-                  location.pathname === "/" || location.pathname === "/home"
-                    ? "#240ada "
-                    : "inherit"
+                color: location.pathname === "/" ? "#240ada" : "inherit",
+                background: location.pathname === "/" ? "#ffff" : "inherit",
+                fontWeight: location.pathname === "/" ? "700" : "inherit"
+            
               }}
             >
               Home
             </NavLink>
             <NavLink
               to="/aboutUs"
-              className={`text-${
+              className={` p-2   text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/aboutUs")}
               isactive={() => location.pathname === "/aboutUs"}
               style={{
-                color: location.pathname === "/aboutUs" ? "#240ada" : "inherit"
+                color: location.pathname === "/aboutUs" ? "#240ada" : "inherit",
+                background: location.pathname === "/aboutUs" ? "#ffff" : "inherit",
+                fontWeight: location.pathname === "/aboutUs" ? "700" : "inherit"
               }}
             >
               About US
@@ -76,7 +78,10 @@ const Navbar = () => {
             <a
               className={`flex gap-1 relative  hover:hover-nav cursor-pointer transition-all`}
               style={{
-                color: location.pathname === "/Products" ? "#240ada" : "inherit"
+            
+                color: location.pathname === "/Products" ? "#240ada" : "inherit",
+                background: location.pathname === "/Products" ? "#ffff" : "inherit",
+                fontWeight: location.pathname === "/Products" ? "700" : "inherit"
               }}
               onMouseEnter={() => setShowdrop(!showdrop)}
               onMouseLeave={() => setShowdrop(!showdrop)}
@@ -84,14 +89,10 @@ const Navbar = () => {
               Products{showdrop ? <CaretUp /> : <CaretDown />}
               {showdrop && (
                 <div
-                  className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded transition-all"
-                  style={{
-                    background:
-                      'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-                      backgroundSize: 'cover'
-                  }}
+                  className="bg-white absolute top-5  px-5  flex flex-col gap-5 py-3 rounded transition-all shadow-2xl"
+             
                 >
-                  <div className="bg-transparent text-black shadow-2xl border-2 border-gray-500 flex flex-col gap-2 w-52 text-lg">
+                  <div className="bg-transparent text-black  flex flex-col gap-2 w-52 text-lg">
                     <NavLink
                       to="/Products/AIVoice"
                       className={` relative text-${
@@ -128,27 +129,32 @@ const Navbar = () => {
             </a>
             <NavLink
               to="/industry"
-              className={`text-${
+              className={`p-2 text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/industry")}
               isactive={() => location.pathname === "/industry"}
               style={{
-                color: location.pathname === "/industry" ? "#240ada" : "inherit"
+                color: location.pathname === "/industry" ? "#240ada" : "inherit",
+                background: location.pathname === "/industry" ? "#ffff" : "inherit",
+                fontWeight: location.pathname === "/industry" ? "700" : "inherit"
+             
               }}
             >
               Industry
             </NavLink>
             <NavLink
               to="/contactus"
-              className={`text-${
+              className={`p-2 text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/contactus")}
               isactive={() => location.pathname === "/contactus"}
               style={{
-                color:
-                  location.pathname === "/contactus" ? "#240ada" : "inherit"
+                color: location.pathname === "/contactus" ? "#240ada" : "inherit",
+                background: location.pathname === "/contactus" ? "#ffff" : "inherit",
+                fontWeight: location.pathname === "/contactus" ? "700" : "inherit"
+               
               }}
             >
               Contact Us
