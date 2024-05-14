@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` footer-box fixed z-50 bg-transparent w-[80%]   mx-auto`}
+      className={` footer-box fixed z-50 bg-transparent w-[80%] rounded-full  mx-auto`}
     >
       <nav
         className={`${
