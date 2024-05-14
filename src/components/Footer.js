@@ -10,7 +10,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <footer
-      className=" text-black py-8 bg-no-repeat bg-contain"
+      className=" text-black py-8 bg-no-repeat bg-contain xl:px-24"
       style={{
         background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
       }}
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-1">
-          <h1>Social Links</h1>
+          <h1 className="text-xl font-semibold lg:mb-3">Social Links</h1>
           <div className="flex justify-between">
             <LinkedInLogo />
             <YoutubeLogo />

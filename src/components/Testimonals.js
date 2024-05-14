@@ -17,13 +17,13 @@ const TestimonialsSection = () => {
       review:
         "Implementing the AI Agent SaaS has enabled us to magnify our sales conversations and generate a remarkable 30% increase in leads without expanding our workforce.",
       author: "Jane Smith, Sales Director, Prominent SaaS Firm",
-      image: "https://th.bing.com/th/id/OIP.Ck2Usj84bIh_SiI2QJ7b-QHaEp?rs=1&pid=ImgDetMain",
+      image: "https://th.bing.com/th?q=Photos+of+People&w=138&h=138&c=7&o=5&dpr=1.3&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate",
     },
     {
       review:
         "The AI-driven insights provided by the platform have revolutionized our understanding of customer behavior and preferences, empowering us to refine our marketing strategies and fuel revenue growth.",
       author: "Mike Johnson, Chief Marketing Officer, Fortune 500 Corporation",
-      image: "https://th.bing.com/th/id/OIP.Ck2Usj84bIh_SiI2QJ7b-QHaEp?rs=1&pid=ImgDetMain",
+      image: "https://th.bing.com/th?q=Deaf+People&w=138&h=138&c=7&o=5&dpr=1.3&pid=1.7&mkt=en-IN&cc=IN&setlang=en&adlt=moderate",
     },
   ];
 
