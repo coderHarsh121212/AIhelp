@@ -18,6 +18,7 @@ import ConsultationPage from "./components/BookConsultation";
 import PressAndMediaPage from "./components/PressMedia";
 import CarriersPage from "./components/Carrier";
 import LegalPage from "./components/LegalPage";
+import Register from "./components/Register";
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,7 @@ function App() {
           <Route path="/pressMedia" element={<PressAndMediaPage />} index></Route>
           <Route path="/Carriar" element={<CarriersPage />} index></Route>
           <Route path="/legal" element={<LegalPage />} index></Route>
+          <Route path="/auth" element={<Register />} index></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
