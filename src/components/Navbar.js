@@ -83,8 +83,8 @@ const Navbar = () => {
                 background: location.pathname === "/Products" ? "#ffff" : "inherit",
                 fontWeight: location.pathname === "/Products" ? "700" : "inherit"
               }}
-              onMouseEnter={() => setShowdrop(!showdrop)}
-              onMouseLeave={() => setShowdrop(!showdrop)}
+              onClick={() => setShowdrop(!showdrop)}
+             
             >
               Products{showdrop ? <CaretUp /> : <CaretDown />}
               {showdrop && (
