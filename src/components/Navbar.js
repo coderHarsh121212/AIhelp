@@ -46,10 +46,14 @@ const Navbar = () => {
               crossOrigin="anonymous"
             />
           </div>
-          <div className={`hidden md:flex items-center space-x-8 pr-10 ${scrollY>0?"space-x-3":"space-x-5"}`}>
+          <div
+            className={`hidden md:flex items-center space-x-8 pr-10 ${
+              scrollY > 0 ? "space-x-3" : "space-x-5"
+            }`}
+          >
             <NavLink
               to="/"
-              className={`p-2 text-${
+              className={`p-2 rounded-md text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/")}
@@ -66,7 +70,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/aboutUs"
-              className={` p-2   text-${
+              className={` p-2 rounded-md  text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/aboutUs")}
@@ -132,7 +136,7 @@ const Navbar = () => {
             </a>
             <NavLink
               to="/industry"
-              className={`p-2 text-${
+              className={`p-2 rounded-md text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/industry")}
@@ -150,7 +154,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/contactus"
-              className={`p-2 text-${
+              className={`p-2 rounded-md text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => navigate("/contactus")}
@@ -166,9 +170,15 @@ const Navbar = () => {
             >
               Contact Us
             </NavLink>
-            <button className="bg-green-400 px-5 py-1 rounded-md text-white">Login</button>
-            <button className="bg-blue-400 px-5 py-1 rounded-md text-white">Start for free</button>
-            <button className="bg-blue-400 px-5 py-1 rounded-md text-white">Schedule a Demo</button>
+            <button className="bg-green-500 px-5 py-1 rounded-md text-white">
+              Login
+            </button>
+            <button className="bg-blue-500 px-5 py-1 rounded-md text-white">
+              Start for free
+            </button>
+            <button className="bg-blue-500 px-5 py-1 rounded-md text-white">
+              Schedule a Demo
+            </button>
           </div>
         </div>
       </nav>
