@@ -2,16 +2,17 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import aboutimg from "../images/image.png";
 const AISection = () => {
-  const navigate= useNavigate()
+  const navigate = useNavigate();
   return (
     <>
-        <section
-          className="py-20 bg-contain bg-no-repeat bg-center"
-          style={{
-            background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-            backgroundSize: 'cover'
-          }}
-        >
+      <section
+        className="py-20 bg-contain bg-no-repeat bg-center"
+        style={{
+          background:
+            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+          backgroundSize: "cover"
+        }}
+      >
         <div className="container mx-auto px-4 mt-20 lg:mt-40 text-black">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="md:w-3/4 lg:w-1/2">
@@ -25,10 +26,16 @@ const AISection = () => {
                 propel revenue expansion.
               </h3>
               <div className="flex flex-col md:flex-row  md:space-x-4 w-3/4 justify-center gap-5 mx-auto md:w-full">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out" onClick={()=>navigate("/scheduleDemo")}>
+                <button
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out"
+                  onClick={() => navigate("/scheduleDemo")}
+                >
                   Schedule a Demo
                 </button>
-                <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out" onClick={()=>navigate("/freetrial")}>
+                <button
+                  className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out"
+                  onClick={() => navigate("/freetrial")}
+                >
                   Get Started with a Free Trial
                 </button>
               </div>

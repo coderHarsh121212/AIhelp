@@ -170,13 +170,13 @@ const Navbar = () => {
             >
               Contact Us
             </NavLink>
-            <button className="bg-green-500 px-5 py-1 rounded-md text-white">
+            <button className="bg-green-500 px-5 py-1 rounded-md text-white"  onClick={()=>navigate("/getStarted")}>
               Login
             </button>
-            <button className="bg-blue-500 px-5 py-1 rounded-md text-white">
+            <button className="bg-blue-500 px-5 py-1 rounded-md text-white" onClick={()=>navigate("/freetrial")}>
               Start for free
             </button>
-            <button className="bg-blue-500 px-5 py-1 rounded-md text-white">
+            <button className="bg-blue-500 px-5 py-1 rounded-md text-white" onClick={()=>navigate("/scheduleDemo")}>
               Schedule a Demo
             </button>
           </div>
