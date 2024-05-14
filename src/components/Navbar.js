@@ -23,10 +23,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`w-full footer-box fixed z-50 bg-transparent`}>
-      <nav className={`  fixed z-50 w-full `}>
+    <div className={` footer-box fixed z-50 bg-transparent w-[80%]  rounded-full mx-auto`}>
+      <nav className={`  fixed z-50 w-[80%]  rounded-full  left-24 lg:left-32  mt-6 shadow-2xl `}>
         <div
-          className="flex items-center justify-between text-black bg-no-repeat bg-cover"
+          className="flex items-center justify-between text-black bg-no-repeat bg-cover rounded-full"
           style={{
             background:
               'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
