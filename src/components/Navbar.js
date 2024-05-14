@@ -56,7 +56,10 @@ const Navbar = () => {
               className={`p-2 rounded-md text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                setShowdrop(false);
+              }}
               isactive={() =>
                 location.pathname === "/" || location.pathname === "/home"
               }
@@ -73,7 +76,11 @@ const Navbar = () => {
               className={` p-2 rounded-md  text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
-              onClick={() => navigate("/aboutUs")}
+              
+              onClick={() => {
+                navigate("/aboutUs");
+                setShowdrop(false);
+              }}
               isactive={() => location.pathname === "/aboutUs"}
               style={{
                 color: location.pathname === "/aboutUs" ? "#240ada" : "inherit",
@@ -139,7 +146,11 @@ const Navbar = () => {
               className={`p-2 rounded-md text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
-              onClick={() => navigate("/industry")}
+              onClick={() => {
+                navigate("/industry");
+                setShowdrop(false);
+              }}
+            
               isactive={() => location.pathname === "/industry"}
               style={{
                 color:
@@ -157,7 +168,10 @@ const Navbar = () => {
               className={`p-2 rounded-md text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
-              onClick={() => navigate("/contactus")}
+              onClick={() => {
+                navigate("/industry");
+                setShowdrop(false);
+              }}
               isactive={() => location.pathname === "/contactus"}
               style={{
                 color:
@@ -170,13 +184,22 @@ const Navbar = () => {
             >
               Contact Us
             </NavLink>
-            <button className="bg-green-500 px-5 py-1 rounded-md text-white"  onClick={()=>navigate("/getStarted")}>
+            <button
+              className="bg-green-500 px-5 py-1 rounded-md text-white"
+              onClick={() => navigate("/getStarted")}
+            >
               Login
             </button>
-            <button className="bg-blue-500 px-5 py-1 rounded-md text-white" onClick={()=>navigate("/freetrial")}>
+            <button
+              className="bg-blue-500 px-5 py-1 rounded-md text-white"
+              onClick={() => navigate("/freetrial")}
+            >
               Start for free
             </button>
-            <button className="bg-blue-500 px-5 py-1 rounded-md text-white" onClick={()=>navigate("/scheduleDemo")}>
+            <button
+              className="bg-blue-500 px-5 py-1 rounded-md text-white"
+              onClick={() => navigate("/scheduleDemo")}
+            >
               Schedule a Demo
             </button>
           </div>
