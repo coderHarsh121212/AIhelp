@@ -7,7 +7,7 @@ import IndustryImage from "../images/bg2.png";
 import { useLocation, useNavigate } from "react-router-dom";
 const Footer = () => {
   const location = useLocation();
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <footer
       className=" text-white py-8 "
@@ -47,23 +47,41 @@ const Footer = () => {
         <div className="flex flex-col gap-1">
           <h1 className="text-xl font-semibold lg:mb-3">Quick Links</h1>
           <div className="flex  gap-10 flex-wrap">
-            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/")}>
+            <a
+              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              onClick={() => navigate("/")}
+            >
               Home
             </a>
-            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/aboutUs")}>
+            <a
+              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              onClick={() => navigate("/aboutUs")}
+            >
               About Us
             </a>
-            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/Products/AIChat")}>
+            <a
+              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              onClick={() => navigate("/Products/AIChat")}
+            >
               Chat AI
             </a>
-            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/Products/AIVoice")}>
+            <a
+              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              onClick={() => navigate("/Products/AIVoice")}
+            >
               Voice AI
             </a>
 
-            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/industry")}>
+            <a
+              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              onClick={() => navigate("/industry")}
+            >
               Industries
             </a>
-            <a className="underline cursor-pointer hover:text-blue-950 transition-all" onClick={()=>navigate("/contactus")}>
+            <a
+              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              onClick={() => navigate("/contactus")}
+            >
               Contact
             </a>
           </div>

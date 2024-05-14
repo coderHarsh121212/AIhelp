@@ -14,6 +14,7 @@ import DemoPage from "./components/ScheduleDemo";
 import FreeTrial from "./components/FreeTrial";
 
 import GetStartedAIDemo from "./components/GetStarted";
+import ConsultationPage from "./components/BookConsultation";
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
           <Route path="/scheduleDemo" element={<DemoPage />} index></Route>
           <Route path="/freetrial" element={<FreeTrial />} index></Route>
           <Route path="/getStarted" element={<GetStartedAIDemo />} index></Route>
+          <Route path="/bookaConsultation" element={<ConsultationPage />} index></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SolutionsSection = () => {
+  
   return (
     <section className="py-12 px-4 ">
       <div className="max-w-7xl mx-auto">
@@ -29,11 +31,12 @@ const SolutionsSection = () => {
 };
 
 const SolutionCard = ({ title, description }) => {
+  const navigate = useNavigate()
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg flex justify-between flex-col">
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700">{description}</p>
-      <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded element">
+      <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded element" onClick={()=>navigate("/bookaConsultation")}>
         BOOK A CONSULTATION
       </button>
     </div>
