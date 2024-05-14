@@ -89,7 +89,7 @@ const Navbar = () => {
               Products{showdrop ? <CaretUp /> : <CaretDown />}
               {showdrop && (
                 <div
-                  className="bg-white absolute top-5  px-5  flex flex-col gap-5 py-3 rounded transition-all shadow-2xl"
+                  className="bg-white absolute top-8  px-5  flex flex-col gap-5 py-3 rounded transition-all shadow-2xl"
              
                 >
                   <div className="bg-transparent text-black  flex flex-col gap-2 w-52 text-lg">
