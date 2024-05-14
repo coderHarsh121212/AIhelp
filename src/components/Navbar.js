@@ -4,7 +4,7 @@ import homeImage from "../images/image.png";
 import AboutImage from "../images/bg1.png";
 import ProductImage from "../images/bg3.png";
 import IndustryImage from "../images/bg2.png";
-import { CloseBtn, Hamburger } from "../icons/icons";
+import { CaretDown, CaretUp, CloseBtn, Hamburger } from "../icons/icons";
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(true);
   const [scrollY, setScrollY] = useState(0);
@@ -73,14 +73,14 @@ const Navbar = () => {
               About US
             </NavLink>
             <a
-              className={` relative  hover:hover-nav cursor-pointer`}
+              className={`flex gap-1 relative  hover:hover-nav cursor-pointer`}
               style={{
                 color: location.pathname === "/Products" ? "#240ada" : "inherit"
               }}
               onMouseEnter={() => setShowdrop(!showdrop)}
               onMouseLeave={() => setShowdrop(!showdrop)}
             >
-              Products
+              Products{showdrop ? <CaretUp /> : <CaretDown />}
               {showdrop && (
                 <div
                   className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded"
@@ -189,20 +189,57 @@ const Navbar = () => {
         >
           About US
         </NavLink>
-        <NavLink
-          to="/Products"
-          onClick={() => navigate("/Products")}
-          className={`hover:text-blue-500 font-sans text-xl ${
-            location.pathname === "/Products" ? "text-blue-900" : ""
-          }`}
+
+        <a
+          className={`flex gap-1 justify-center text-xl  hover:hover-nav cursor-pointer items-center`}
+          style={{
+            color: location.pathname === "/Products" ? "#240ada" : "inherit"
+          }}
+          onClick={() => setShowdrop(!showdrop)}
         >
-          Products
-        </NavLink>
+          Products{showdrop ? <CaretUp /> : <CaretDown />}
+        </a>
+        {showdrop && (
+          <div className="  w-36 flex flex-col gap-5 py-3 rounded">
+            <div className="bg-gray-100 text-black shadow-2xl  flex flex-col gap-5 w-52 text-lg">
+              <NavLink
+                to="/Products/AIVoice"
+                className={` relative text-${
+                  scrollY > 0 ? "white hover:text-blue-500" : "black"
+                } hover:hover-nav`}
+                isactive={() => location.pathname === "/Products/AIVoice"}
+                style={{
+                  color:
+                    location.pathname === "/Products/AIVoice"
+                      ? "#240ada"
+                      : "inherit"
+                }}
+              >
+                AI Voice
+              </NavLink>
+              <NavLink
+                to="/Products/AIChat"
+                className={` relative text-${
+                  scrollY > 0 ? "white hover:text-blue-500" : "black"
+                } hover:hover-nav`}
+                isactive={() => location.pathname === "/Products/AIChat"}
+                style={{
+                  color:
+                    location.pathname === "/Products/AIChat"
+                      ? "#240ada"
+                      : "inherit"
+                }}
+              >
+                AI Chat
+              </NavLink>
+            </div>
+          </div>
+        )}
         <NavLink
           to="/industry"
           onClick={() => navigate("/industry")}
           className={`hover:text-blue-500 font-sans text-xl ${
-            location.pathname === "/industry" ? "text-blue-900" : ""
+            location.pathname === "/contactus" ? "text-blue-900" : ""
           }`}
         >
           Industry

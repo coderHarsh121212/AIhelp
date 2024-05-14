@@ -7,14 +7,15 @@ import PricingCard from "../components/Pricing";
 import { useParams } from "react-router-dom";
 
 const ProductsPage = () => {
-  const {id} = useParams()
+  const { id } = useParams();
   const [showChat, setShowChat] = useState(true);
   return (
     <div className="min-h-screen">
       <header
         className="py-48 px-4 text-center bg-white bg-cover bg-no-repeat"
         style={{
-          background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+          background:
+            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
         }}
       >
         <div className="w-full sm:w-4/5 mx-auto">
@@ -29,8 +30,8 @@ const ProductsPage = () => {
           </p>
         </div>
       </header>
-     
-      {id=="AIVoice" ? (
+
+      {id == "AIVoice" ? (
         <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
           <div className="grid grid-cols-1 justify-center items-center  ">
             <div className="flex flex-col">
@@ -132,15 +133,169 @@ const ProductsPage = () => {
                 Pricing:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
-                <PricingCard />
-                <PricingCard />
-                <PricingCard />
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+                  <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                      Basic
+                    </h2>
+                    <p className="text-gray-600">Unlock premium features</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center mb-6">
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      <span
+                        className="text-green-500"
+                        data-qa="p-small_features_table__new_price--standard"
+                      >
+                        $0.1415
+                      </span>
+                      &nbsp;
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="mb-1">per minute</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+                  <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                      Advanced
+                    </h2>
+                    <p className="text-gray-600">Unlock premium features</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center mb-6">
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      <span
+                        className="text-green-500"
+                        data-qa="p-small_features_table__new_price--standard"
+                      >
+                        $0.129
+                      </span>
+                      &nbsp;
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="mb-1">per minute</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+                  <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                      Pro
+                    </h2>
+                    <p className="text-gray-600">Unlock premium features</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center mb-6">
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      <span
+                        className="text-green-500"
+                        data-qa="p-small_features_table__new_price--standard"
+                      >
+                        $0.12275
+                      </span>
+                      &nbsp;
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="mb-1">per minute</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8 ">
-            Discover More
-          </button>
+         
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       ) : (
         <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
@@ -237,15 +392,168 @@ const ProductsPage = () => {
 
               <p className="font-semibold text-4xl text-blue-700 ">Pricing:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
-                <PricingCard />
-                <PricingCard />
-                <PricingCard />
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+                  <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                      Basic
+                    </h2>
+                    <p className="text-gray-600">Unlock premium features</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center mb-6">
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      <span
+                        className="text-green-500"
+                        data-qa="p-small_features_table__new_price--standard"
+                      >
+                        $0.1415
+                      </span>
+                      &nbsp;
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="mb-1">per minute</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+                  <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                      Advanced
+                    </h2>
+                    <p className="text-gray-600">Unlock premium features</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center mb-6">
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      <span
+                        className="text-green-500"
+                        data-qa="p-small_features_table__new_price--standard"
+                      >
+                        $0.129
+                      </span>
+                      &nbsp;
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="mb-1">per minute</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+                  <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                      Pro
+                    </h2>
+                    <p className="text-gray-600">Unlock premium features</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center mb-6">
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      <span
+                        className="text-green-500"
+                        data-qa="p-small_features_table__new_price--standard"
+                      >
+                        $0.12275
+                      </span>
+                      &nbsp;
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="mb-1">per minute</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8">
-            Discover More
-          </button>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       )}
 
@@ -270,7 +578,7 @@ const ProductsPage = () => {
             </p>
           </div>
         </div>
-        <AliceCarousel
+        {/* <AliceCarousel
           mouseTracking
           // autoPlay
           autoPlayInterval={3000}
@@ -352,7 +660,7 @@ const ProductsPage = () => {
         </AliceCarousel>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           Initiate Consultation
-        </button>
+        </button> */}
       </section>
     </div>
   );
