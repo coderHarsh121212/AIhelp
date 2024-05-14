@@ -3,7 +3,7 @@ import React from 'react';
 const ConsultationPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center" style={{ backgroundImage: `url(${"https://www.bing.com/th?id=OIP.SDKj_sVAdMs-ek212EOoPQHaE8&w=174&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="bg-transparent shadow-2xl p-8 rounded-lg shadow-md w-full md:w-3/4 lg:w-1/2 xl:w-1/3 backdrop-filter backdrop-blur-lg">
+      <div className="bg-transparent shadow-2xl p-8 rounded-lg w-full md:w-3/4 lg:w-1/2 xl:w-1/3 backdrop-filter backdrop-blur-lg">
         <h1 className="text-3xl font-bold mb-6 text-center">Book a Consultation</h1>
         <form className="space-y-4">
           <div>

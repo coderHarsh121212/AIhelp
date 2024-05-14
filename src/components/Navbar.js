@@ -26,20 +26,10 @@ const Navbar = () => {
     <div className={`w-full footer-box fixed z-50 bg-transparent`}>
       <nav className={`  fixed z-50 w-full `}>
         <div
-          className="flex items-center justify-between text-white"
+          className="flex items-center justify-between text-black bg-no-repeat bg-cover"
           style={{
             background:
-              location.pathname === "/" || location.pathname === "/home"
-                ? ` url(${homeImage})`
-                : location.pathname === "/aboutUs"
-                ? `url(${AboutImage})`
-                : location.pathname === "/Products"
-                ? `url(${ProductImage})`
-                : location.pathname === "/industry"
-                ? `url(${IndustryImage})`
-                : location.pathname === "/contactus"
-                ? `url(${AboutImage})`
-                : ""
+              'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
           }}
         >
           <div className="flex items-center">
@@ -100,50 +90,40 @@ const Navbar = () => {
                   className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded"
                   style={{
                     background:
-                      location.pathname === "/" || location.pathname === "/home"
-                        ? ` url(${homeImage})`
-                        : location.pathname === "/aboutUs"
-                        ? `url(${AboutImage})`
-                        : location.pathname === "/Products"
-                        ? `url(${ProductImage})`
-                        : location.pathname === "/industry"
-                        ? `url(${IndustryImage})`
-                        : location.pathname === "/contactus"
-                        ? `url(${AboutImage})`
-                        : ""
+                      'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
                   }}
                 >
-                  <div className="bg-transparent text-white shadow-2xl border-2 border-gray-500 flex flex-col gap-2 w-52 text-lg">
-                  <NavLink
-                    to="/Products/AIVoice"
-                    className={` relative text-${
-                      scrollY > 0 ? "white hover:text-blue-500" : "black"
-                    } hover:hover-nav`}
-                    isactive={() => location.pathname === "/Products/AIVoice"}
-                    style={{
-                      color:
-                        location.pathname === "/Products/AIVoice"
-                          ? "#240ada"
-                          : "inherit"
-                    }}
-                  >
-                    AI Voice
-                  </NavLink>
-                  <NavLink
-                    to="/Products/AIChat"
-                    className={` relative text-${
-                      scrollY > 0 ? "white hover:text-blue-500" : "black"
-                    } hover:hover-nav`}
-                    isactive={() => location.pathname === "/Products/AIChat"}
-                    style={{
-                      color:
-                        location.pathname === "/Products/AIChat"
-                          ? "#240ada"
-                          : "inherit"
-                    }}
-                  >
-                    AI Chat
-                  </NavLink>
+                  <div className="bg-transparent text-black shadow-2xl border-2 border-gray-500 flex flex-col gap-2 w-52 text-lg">
+                    <NavLink
+                      to="/Products/AIVoice"
+                      className={` relative text-${
+                        scrollY > 0 ? "white hover:text-blue-500" : "black"
+                      } hover:hover-nav`}
+                      isactive={() => location.pathname === "/Products/AIVoice"}
+                      style={{
+                        color:
+                          location.pathname === "/Products/AIVoice"
+                            ? "#240ada"
+                            : "inherit"
+                      }}
+                    >
+                      AI Voice
+                    </NavLink>
+                    <NavLink
+                      to="/Products/AIChat"
+                      className={` relative text-${
+                        scrollY > 0 ? "white hover:text-blue-500" : "black"
+                      } hover:hover-nav`}
+                      isactive={() => location.pathname === "/Products/AIChat"}
+                      style={{
+                        color:
+                          location.pathname === "/Products/AIChat"
+                            ? "#240ada"
+                            : "inherit"
+                      }}
+                    >
+                      AI Chat
+                    </NavLink>
                   </div>
                 </div>
               )}

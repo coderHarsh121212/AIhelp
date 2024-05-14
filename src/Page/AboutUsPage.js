@@ -4,8 +4,10 @@ const AboutUsSection = () => {
   return (
     <div>
       <section
-        className="px-4 bg-cover bg-no-repeat text-white"
-        style={{ backgroundImage: `url(${aboutimg})` }}
+        className="px-4 bg-cover bg-no-repeat text-black"
+        style={{
+          background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+        }}
       >
         <div className={`w-full md:max-w-7xl mx-auto py-40`}>
           <h2 className="text-5xl md:text-8xl font-semibold mb-8">About Us</h2>

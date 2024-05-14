@@ -13,13 +13,15 @@ const ProductsPage = () => {
     <div className="min-h-screen">
       <header
         className="py-48 px-4 text-center bg-white bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${aboutimg})` }}
+        style={{
+          background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+        }}
       >
         <div className="w-full sm:w-4/5 mx-auto">
-          <h1 className=" text-3xl md:text-5xl font-bold mb-4 text-white">
+          <h1 className=" text-3xl md:text-5xl font-bold mb-4 text-black">
             Harness the Potential of Artificial Intelligence
           </h1>
-          <p className="text-lg md:text-lg text-white mb-8">
+          <p className="text-lg md:text-lg text-gray-600 mb-8">
             Revolutionize your business using our state-of-the-art AI Voicebots,
             Chatbots, and Tailored AI Assistants. Encounter unmatched
             productivity, heightened interaction with customers, and expedited

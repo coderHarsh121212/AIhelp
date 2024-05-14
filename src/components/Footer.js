@@ -10,20 +10,9 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <footer
-      className=" text-white py-8 "
+      className=" text-black py-8 bg-no-repeat bg-contain"
       style={{
-        background:
-          location.pathname === "/" || location.pathname === "/home"
-            ? ` url(${homeImage})`
-            : location.pathname === "/aboutUs"
-            ? `url(${AboutImage})`
-            : location.pathname === "/Products"
-            ? `url(${ProductImage})`
-            : location.pathname === "/industry"
-            ? `url(${IndustryImage})`
-            : location.pathname === "/contactus"
-            ? `url(${AboutImage})`
-            : "black"
+        background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
       }}
     >
       <div className="w-full  px-5 flex  flex-wrap items-center justify-center lg:justify-between flex-col gap-5 lg:flex-row">

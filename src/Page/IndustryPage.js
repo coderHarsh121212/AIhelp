@@ -52,9 +52,11 @@ const IndustriesSection = () => {
 
   return (
     <div>
-    <section className="py-24 px-4 bg-gray-100" style={{backgroundImage: `url(${aboutimg})`}}>
+    <section className="py-24 px-4 bg-gray-100"   style={{
+          background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
+        }}>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-7xl font-semibold  text-white my-20 mb-40 ">Industries</h2> 
+        <h2 className="text-7xl font-semibold  text-black my-20 mb-40 ">Industries</h2> 
       </div>
     </section>
     <div className='px-10'>
