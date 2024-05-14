@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { InstallNow, Phone, Qualification, Realtime } from "../icons/icons";
 import aboutimg from "../images/bg2.png";
 // Import YouTube component from 'react-youtube' if you're using it
 
@@ -67,7 +68,7 @@ const IndustriesSection = () => {
         style={{
           background:
             'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-            backgroundSize: 'cover'
+          backgroundSize: "cover"
         }}
       >
         <div className="max-w-7xl mx-auto">
@@ -95,16 +96,34 @@ const IndustriesSection = () => {
 
 const IndustryCard = ({ industry, togglePopup }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-2xl flex flex-col justify-between h-40">
-      <h3 className="text-xl font-semibold mb-2">{industry.name}</h3>
-      <div className="grid grid-cols-2 items-center mb-4 w-full gap-5">
-        <button onClick={togglePopup} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded ">
-          Sales Pre Conditions
+    <div className="bg-white  rounded-lg shadow-lg cursor-pointer hover:shadow-2xl flex flex-col justify-between min-h-40 h-fit items-start">
+      <div className="flex flex-col gap-2 items-start px-6 mb-3">
+        <p className="text-xl font-bold">{industry.name}</p>
+      </div>
+      <div className="flex gap-2 items-start flex-col px-6">
+        <p className="text-gray-500 font-semibold">Perfect for</p>
+        <p className="font-semibold flex gap-2 my-3">
+          <Realtime /> Real-Time Booking
+        </p>
+        <p className="font-semibold flex gap-2">
+          <Qualification />
+          Lead Qualification
+        </p>
+      </div>
+      <div className="w-full grid grid-cols-2 mt-5 items-center justify-center">
+        <button
+          onClick={togglePopup}
+          className=" text-black flex gap-2 border-t-2  rounded border-r-2 py-3 px-5"
+        >
+          <Phone /> Sales Pre Qualification
         </button>
-        <button onClick={togglePopup} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded ">
-         Services
+        <button
+          onClick={togglePopup}
+          className=" text-black border-t-2 flex gap-2 px-5 rounded py-3"
+        >
+          <InstallNow />
+          Services
         </button>
-      
       </div>
     </div>
   );

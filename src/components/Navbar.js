@@ -21,14 +21,14 @@ const Navbar = () => {
 
   return (
     <div
-      className={` footer-box fixed z-50 bg-transparent w-[80%] rounded-full  mx-auto`}
+      className={` footer-box fixed z-50 bg-transparent w-[100%] rounded-full  mx-auto`}
     >
       <nav
         className={`${
           scrollY > 0
-            ? "white hover:text-blue-500 w-[79%] rounded-full  left-24 lg:left-32  mt-6 shadow-2xl"
+            ? "white hover:text-blue-500 w-[83%]  text-xs rounded-full  left-24 lg:left-32  mt-6 shadow-2xl"
             : "black"
-        }  fixed z-50 w-[100%]  `}
+        }  fixed z-50 w-[100%]  hidden md:block`}
       >
         <div
           className="flex items-center justify-between text-black bg-no-repeat bg-cover rounded-full"
@@ -47,13 +47,13 @@ const Navbar = () => {
             />
           </div>
           <div
-            className={`hidden md:flex items-center space-x-8 pr-10 ${
+            className={`hidden md:flex items-center space-x-4 pr-10 xl:space-x-8 ${
               scrollY > 0 ? "space-x-3" : "space-x-5"
             }`}
           >
             <NavLink
               to="/"
-              className={`p-2 rounded-md text-${
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => {
@@ -73,10 +73,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/aboutUs"
-              className={` p-2 rounded-md  text-${
+              className={` p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
-              
               onClick={() => {
                 navigate("/aboutUs");
                 setShowdrop(false);
@@ -92,7 +91,7 @@ const Navbar = () => {
               About Us
             </NavLink>
             <a
-              className={`flex gap-1 relative  hover:hover-nav cursor-pointer transition-all`}
+              className={`flex gap-1 relative text-xs md:text-base lg:text-sm xl:text-lg hover:hover-nav cursor-pointer transition-all`}
               style={{
                 color:
                   location.pathname === "/Products" ? "#240ada" : "inherit",
@@ -124,7 +123,7 @@ const Navbar = () => {
                     </NavLink>
                     <NavLink
                       to="/Products/AIChat"
-                      className={` relative text-${
+                      className={` relative text-xs md:text-base lg:text-sm xl:text-lg text-${
                         scrollY > 0 ? "white hover:text-blue-500" : "black"
                       } hover:hover-nav`}
                       isactive={() => location.pathname === "/Products/AIChat"}
@@ -143,14 +142,13 @@ const Navbar = () => {
             </a>
             <NavLink
               to="/industry"
-              className={`p-2 rounded-md text-${
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => {
                 navigate("/industry");
                 setShowdrop(false);
               }}
-            
               isactive={() => location.pathname === "/industry"}
               style={{
                 color:
@@ -165,7 +163,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/contactus"
-              className={`p-2 rounded-md text-${
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => {
@@ -184,20 +182,21 @@ const Navbar = () => {
             >
               Contact Us
             </NavLink>
+
             <button
-              className="bg-green-500 px-5 py-1 rounded-md text-white"
+              className="bg-green-500 px-3 xl:px-5 py-1 xl:py-2 rounded-md text-white hidden lg:block hover:bg-green-600"
               onClick={() => navigate("/getStarted")}
             >
               Login
             </button>
             <button
-              className="bg-blue-500 px-5 py-1 rounded-md text-white"
+              className="bg-blue-500 px-3 py-1 xl:px-5 xl:py-2 rounded-md text-white hidden lg:block hover:bg-blue-600"
               onClick={() => navigate("/freetrial")}
             >
               Start for free
             </button>
             <button
-              className="bg-blue-500 px-5 py-1 rounded-md text-white"
+              className="bg-blue-500 px-3 py-1 xl:px-5 xl:py-2 rounded-md text-white hidden lg:block hover:bg-blue-600"
               onClick={() => navigate("/scheduleDemo")}
             >
               Schedule a Demo
@@ -205,7 +204,21 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="fixed top-7 right-3 z-50 md:hidden">
+      <div
+        className="fixed  px-3 z-50 md:hidden flex justify-between w-full items-center"
+        style={{
+          background:
+            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+          backgroundSize: "cover"
+        }}
+      >
+        <img
+          src="https://static.wixstatic.com/media/30aef6_b482c098bfa543898242124184eea151%7Emv2.png/v1/fit/w_2500,h_1330,al_c/30aef6_b482c098bfa543898242124184eea151%7Emv2.png"
+          alt="Logo"
+          className="h-20 w-20 mr-2"
+          crossOrigin="anonymous"
+        />
+
         {isHidden ? (
           <div onClick={() => setIsHidden(!isHidden)}>
             <Hamburger />
@@ -218,7 +231,7 @@ const Navbar = () => {
       </div>
       <div
         id="hiddenLinks"
-        className={`md:hidden  bg-white fixed w-1/4 h-fit bg-cover bg-center text-black rounded-md top-20 flex flex-col right-0 gap-4 py-7 custom-transition ${
+        className={`md:hidden  bg-white fixed w-1/4 h-fit bg-cover bg-center text-black rounded-md top-16 flex flex-col right-7 gap-4 py-7 custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
       >
@@ -255,7 +268,7 @@ const Navbar = () => {
             <div className="bg-gray-100 text-black shadow-2xl  flex flex-col gap-5 w-52 text-lg">
               <NavLink
                 to="/Products/AIVoice"
-                className={` relative text-${
+                className={`text-xl  relative text-${
                   scrollY > 0 ? "white hover:text-blue-500" : "black"
                 } hover:hover-nav`}
                 isactive={() => location.pathname === "/Products/AIVoice"}
@@ -270,7 +283,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/Products/AIChat"
-                className={` relative text-${
+                className={`text-xl relative text-${
                   scrollY > 0 ? "white hover:text-blue-500" : "black"
                 } hover:hover-nav`}
                 isactive={() => location.pathname === "/Products/AIChat"}

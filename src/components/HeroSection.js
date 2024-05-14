@@ -20,7 +20,7 @@ const AISection = () => {
                 Transform Your <span className="">Business</span> with
                 Intelligent <span className="">AI</span> Agents
               </h2>
-              <h3 className="text-lg md:text-xl text-gray-700 mb-6">
+              <h3 className="text-lg md:text-xl text-gray-950 mb-6">
                 Harness the potential of conversational AI to elevate customer
                 satisfaction by 30%, slash support expenditures by 40%, and
                 propel revenue expansion.
