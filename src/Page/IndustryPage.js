@@ -97,8 +97,8 @@ const IndustryCard = ({ industry, togglePopup }) => {
     <div className="bg-white p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-2xl flex flex-col justify-between h-40">
       <h3 className="text-xl font-semibold mb-2">{industry.name}</h3>
       <div className="flex justify-between items-center mb-4">
-        <button onClick={togglePopup} className="text-blue-500 hover:underline">
-          Book a Live Consultant
+        <button onClick={togglePopup} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-52">
+          Sales Pre Conditions
         </button>
         <a
           href={industry.testCodeUrl}
