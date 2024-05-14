@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import aboutimg from "../images/bg1.png";
 const AboutUsSection = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <section
@@ -85,28 +87,28 @@ const AboutUsSection = () => {
         </ul>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-5 w-[90%] mx-auto">
-        <div className="border-2 py-6 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300">
+        <div className="border-2 py-6 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300" onClick={()=>navigate("/pressMedia")}>
           <h3 className="text-xl font-semibold mb-4">Press and Media</h3>
           <ul className="list-disc list-inside">
             <li>Latest press releases and media coverage.</li>
             <li>Access to logos and branding assets.</li>
           </ul>
         </div>
-        <div className="border-2 py-6 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300">
+        <div className="border-2 py-6 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300" onClick={()=>navigate("/Carriar")}>
           <h3 className="text-xl font-semibold mb-4">Careers</h3>
           <ul className="list-disc list-inside">
             <li>Explore job opportunities and our hiring process.</li>
             <li>Discover employee benefits and our vibrant company culture.</li>
           </ul>
         </div>
-        <div className="border-2 py-4 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300">
+        <div className="border-2 py-4 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300" onClick={()=>navigate("/contactus")}>
           <h3 className="text-xl font-semibold mb-4 mt-8">Contact Us</h3>
           <ul className="list-disc list-inside">
             <li>Find office locations and contact details.</li>
             <li>Inquiries about partnerships and collaborations.</li>
           </ul>
         </div>
-        <div className="border-2 py-4 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300">
+        <div className="border-2 py-4 rounded-md shadow-lg cursor-pointer hover:-translate-y-1 transition-all hover:bg-blue-300" onClick={()=>navigate("/legal")}>
           <h3 className="text-xl font-semibold mb-4 mt-8">Legal</h3>
           <ul className="list-disc list-inside">
             <li>

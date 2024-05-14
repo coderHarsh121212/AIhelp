@@ -72,12 +72,8 @@ const Navbar = () => {
             >
               About US
             </NavLink>
-            <NavLink
-              to="/Products/:id"
-              className={` relative text-${
-                scrollY > 0 ? "white hover:text-blue-500" : "black"
-              } hover:hover-nav`}
-              isactive={() => location.pathname === "/Products"}
+            <a
+              className={` relative  hover:hover-nav cursor-pointer`}
               style={{
                 color: location.pathname === "/Products" ? "#240ada" : "inherit"
               }}
@@ -127,7 +123,7 @@ const Navbar = () => {
                   </div>
                 </div>
               )}
-            </NavLink>
+            </a>
             <NavLink
               to="/industry"
               className={`text-${

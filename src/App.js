@@ -15,6 +15,9 @@ import FreeTrial from "./components/FreeTrial";
 
 import GetStartedAIDemo from "./components/GetStarted";
 import ConsultationPage from "./components/BookConsultation";
+import PressAndMediaPage from "./components/PressMedia";
+import CarriersPage from "./components/Carrier";
+import LegalPage from "./components/LegalPage";
 function App() {
   return (
     <div className="App">
@@ -30,6 +33,9 @@ function App() {
           <Route path="/freetrial" element={<FreeTrial />} index></Route>
           <Route path="/getStarted" element={<GetStartedAIDemo />} index></Route>
           <Route path="/bookaConsultation" element={<ConsultationPage />} index></Route>
+          <Route path="/pressMedia" element={<PressAndMediaPage />} index></Route>
+          <Route path="/Carriar" element={<CarriersPage />} index></Route>
+          <Route path="/legal" element={<LegalPage />} index></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
