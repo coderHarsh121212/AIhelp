@@ -37,32 +37,32 @@ const Footer = () => {
           <h1 className="text-xl font-semibold lg:mb-3">Quick Links</h1>
           <div className="flex  gap-10 flex-wrap">
             <a
-              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              className="underline cursor-pointer hover:text-blue-500 transition-all"
               onClick={() => navigate("/")}
             >
               Home
             </a>
             <a
-              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              className="underline cursor-pointer hover:text-blue-500 transition-all"
               onClick={() => navigate("/aboutUs")}
             >
               About Us
             </a>
             <a
-              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              className="underline cursor-pointer hover:text-blue-500 transition-all"
               onClick={() => navigate("/Products/AIChat")}
             >
               Chat AI
             </a>
             <a
-              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              className="underline cursor-pointer hover:text-blue-500 transition-all"
               onClick={() => navigate("/Products/AIVoice")}
             >
               Voice AI
             </a>
 
             <a
-              className="underline cursor-pointer hover:text-blue-950 transition-all"
+              className="underline cursor-pointer hover:text-blue-500 transition-all"
               onClick={() => navigate("/industry")}
             >
               Industries
