@@ -114,7 +114,7 @@ const IndustryCard = ({ industry, togglePopup }) => {
 const Popup = ({ onClose }) => {
   const navigate = useNavigate();
   // YouTube video URL
-  const videoUrl = "https://www.youtube.com/embed/VIDEO_ID"; // Replace VIDEO_ID with your YouTube video ID
+  const videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ"; // Replace VIDEO_ID with your YouTube video ID
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50">
