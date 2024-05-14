@@ -73,7 +73,7 @@ const Navbar = () => {
               About US
             </NavLink>
             <a
-              className={`flex gap-1 relative  hover:hover-nav cursor-pointer`}
+              className={`flex gap-1 relative  hover:hover-nav cursor-pointer transition-all`}
               style={{
                 color: location.pathname === "/Products" ? "#240ada" : "inherit"
               }}
@@ -83,7 +83,7 @@ const Navbar = () => {
               Products{showdrop ? <CaretUp /> : <CaretDown />}
               {showdrop && (
                 <div
-                  className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded"
+                  className="absolute top-5  px-5 w-36 flex flex-col gap-5 py-3 rounded transition-all"
                   style={{
                     background:
                       'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")'
@@ -191,7 +191,7 @@ const Navbar = () => {
         </NavLink>
 
         <a
-          className={`flex gap-1 justify-center text-xl  hover:hover-nav cursor-pointer items-center`}
+          className={`flex gap-1 justify-center text-xl  hover:hover-nav cursor-pointer items-center transition-all`}
           style={{
             color: location.pathname === "/Products" ? "#240ada" : "inherit"
           }}
@@ -200,7 +200,7 @@ const Navbar = () => {
           Products{showdrop ? <CaretUp /> : <CaretDown />}
         </a>
         {showdrop && (
-          <div className="  w-36 flex flex-col gap-5 py-3 rounded">
+          <div className="  w-36 flex flex-col gap-5 py-3 rounded transition-all">
             <div className="bg-gray-100 text-black shadow-2xl  flex flex-col gap-5 w-52 text-lg">
               <NavLink
                 to="/Products/AIVoice"
