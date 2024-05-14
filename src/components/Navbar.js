@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, useNavigate, useLocation, NavLink } from "react-router-dom";
-import homeImage from "../images/image.png";
-import AboutImage from "../images/bg1.png";
-import ProductImage from "../images/bg3.png";
-import IndustryImage from "../images/bg2.png";
+
 import { CaretDown, CaretUp, CloseBtn, Hamburger } from "../icons/icons";
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -73,7 +70,7 @@ const Navbar = () => {
                 fontWeight: location.pathname === "/aboutUs" ? "700" : "inherit"
               }}
             >
-              About US
+              About Us
             </NavLink>
             <a
               className={`flex gap-1 relative  hover:hover-nav cursor-pointer transition-all`}
