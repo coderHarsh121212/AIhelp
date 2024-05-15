@@ -231,7 +231,7 @@ const Navbar = () => {
       </div>
       <div
         id="hiddenLinks"
-        className={`md:hidden  bg-white fixed w-1/4 h-fit bg-cover bg-center text-black rounded-md top-16 flex flex-col right-7 gap-4 py-7 custom-transition ${
+        className={`md:hidden  bg-white fixed sm:w-1/3 w-3/4 h-fit bg-cover bg-center text-black rounded-md top-16 flex flex-col right-0 gap-4 py-7 custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
       >
@@ -264,8 +264,8 @@ const Navbar = () => {
           Products{showdrop ? <CaretUp /> : <CaretDown />}
         </a>
         {showdrop && (
-          <div className="  w-36 flex flex-col gap-5 py-3 rounded transition-all">
-            <div className="bg-gray-100 text-black shadow-2xl  flex flex-col gap-5 w-52 text-lg">
+          <div className=" flex flex-col gap-5 py-1 rounded transition-all">
+            <div className=" text-black  flex flex-col gap-5  text-lg ">
               <NavLink
                 to="/Products/AIVoice"
                 className={`text-xl  relative text-${

@@ -110,10 +110,10 @@ const IndustryCard = ({ industry, togglePopup }) => {
           Lead Qualification
         </p>
       </div>
-      <div className="w-full grid grid-cols-2 mt-5 items-center justify-center">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 mt-5 items-center justify-center">
         <button
           onClick={togglePopup}
-          className=" text-black flex gap-2 border-t-2  rounded border-r-2 py-3 px-5"
+          className=" text-black flex sm:gap-4 border-t-2  rounded border-r-2 py-3 px-5 text-sm"
         >
           <Phone /> Sales Pre Qualification
         </button>
@@ -146,6 +146,7 @@ const Popup = ({ onClose }) => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
+          
         ></iframe>
         <button
           onClick={onClose}

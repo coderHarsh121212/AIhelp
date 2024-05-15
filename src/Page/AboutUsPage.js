@@ -28,7 +28,7 @@ const AboutUsSection = () => {
         </div>
       </section>
       <div className=" w-[90%] px-5 py-6 mx-auto">
-        <h3 className="text-2xl  lg:text-5xl font-semibold mb-8 text-center text-blue-500 ">
+        <h3 className="text-2xl  lg:text-5xl font-semibold mb-8 text-center  ">
           Core Values
         </h3>
         <ul className="list-disc list-inside text-start justify-center gap-3 grid grid-cols-1   items-center mx-auto">

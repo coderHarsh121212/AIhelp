@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-1">
           <h1 className="text-xl font-semibold lg:mb-3">Quick Links</h1>
-          <div className="flex  gap-10 flex-wrap">
+          <div className="flex  gap-10 flex-wrap items-center justify-center">
             <a
               className="underline cursor-pointer hover:text-blue-500 transition-all"
               onClick={() => navigate("/")}

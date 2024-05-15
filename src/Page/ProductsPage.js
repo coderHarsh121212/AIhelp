@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 
 const ProductsPage = () => {
   const { id } = useParams();
-  const [showChat, setShowChat] = useState(true);
+
   return (
     <div className="min-h-screen">
       <header
@@ -16,7 +16,7 @@ const ProductsPage = () => {
         style={{
           background:
             'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-            backgroundSize: 'cover'
+          backgroundSize: "cover"
         }}
       >
         <div className="w-full sm:w-4/5 mx-auto">
@@ -36,24 +36,20 @@ const ProductsPage = () => {
         <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
           <div className="grid grid-cols-1 justify-center items-center  ">
             <div className="flex flex-col">
-              <h2 className="text-3xl font-semibold mb-5 text-blue-500">
-                AI Voicebots
-              </h2>
-              <p className="mb-5 text-blue-300">
+              <h2 className="text-3xl font-semibold mb-5 ">AI Voicebots</h2>
+              <p className="mb-5 ">
                 Transform customer engagements with smart, lifelike dialogues.
               </p>
-              <ul className="mb-5 text-blue-400">
+              <ul className="mb-5 ">
                 <li>Cutting-edge NLP ensuring precise intent comprehension</li>
                 <li>
                   Support for multiple languages and analysis of sentiment
                 </li>
                 <li>Effortless integration with CRM and support platforms</li>
               </ul>
-              <p className="mb-5 text-blue-500">
-                Applications across various industries:
-              </p>
+              <p className="mb-5 ">Applications across various industries:</p>
 
-              <p className="font-semibold text-4xl text-blue-700 ">Features:</p>
+              <p className="font-semibold text-4xl ">Features:</p>
               <div className="flex gap-6 flex-col  mt-4">
                 <section className=" py-12">
                   <div className="container mx-auto flex flex-wrap items-center justify-center">
@@ -130,9 +126,7 @@ const ProductsPage = () => {
                   </div>
                 </section>
               </div>
-              <p className="font-semibold text-4xl text-blue-700  w-3/4 mx-auto">
-                Pricing:
-              </p>
+              <p className="font-semibold text-4xl   w-3/4 mx-auto">Pricing:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
                 <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
                   <div className="text-center mb-6">
@@ -159,6 +153,28 @@ const ProductsPage = () => {
                     <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
                       Choose Plan
                     </button>
+                  </div>
+                  <div className="flex flex-col gap-4 pt-5">
+                    <div className="flex justify-between">
+                      <p className="text-xs font-bold">
+                        •Setup - To setup the platform for the client Phone
+                        Number --New
+                      </p>
+                      <div>✅</div>
+                    </div>
+                    <div className="flex justify-between">
+                      <p className="text-xs font-bold">
+                        •number to callCalling Server Enable calling and
+                        recording services
+                      </p>
+                      <div>✅</div>
+                    </div>
+                    <div className="flex justify-between">
+                      <p className="text-xs font-bold">
+                        •Phone Number --New number to call
+                      </p>
+                      <div>✅</div>
+                    </div>
                   </div>
                 </div>
 
@@ -188,6 +204,28 @@ const ProductsPage = () => {
                       Choose Plan
                     </button>
                   </div>
+                  <div className="flex flex-col gap-4 pt-5">
+                    <div className="flex justify-between">
+                      <p className="text-xs font-bold">
+                        •Setup - To setup the platform for the client Phone
+                        Number --New
+                      </p>
+                      <div>✅</div>
+                    </div>
+                    <div className="flex justify-between">
+                      <p className="text-xs font-bold">
+                        •number to callCalling Server Enable calling and
+                        recording services
+                      </p>
+                      <div>✅</div>
+                    </div>
+                    <div className="flex justify-between">
+                      <p className="text-xs font-bold">
+                        •Phone Number --New number to call
+                      </p>
+                      <div>✅</div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
@@ -216,14 +254,7 @@ const ProductsPage = () => {
                       Choose Plan
                     </button>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
-            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
-              <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-4 pt-5">
                 <div className="flex justify-between">
                   <p className="text-xs font-bold">
                     •Setup - To setup the platform for the client Phone Number
@@ -245,54 +276,6 @@ const ProductsPage = () => {
                   <div>✅</div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
-              <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Setup - To setup the platform for the client Phone Number
-                    --New
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •number to callCalling Server Enable calling and recording
-                    services
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Phone Number --New number to call
-                  </p>
-                  <div>✅</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
-              <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Setup - To setup the platform for the client Phone Number
-                    --New
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •number to callCalling Server Enable calling and recording
-                    services
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Phone Number --New number to call
-                  </p>
-                  <div>✅</div>
                 </div>
               </div>
             </div>
@@ -302,14 +285,12 @@ const ProductsPage = () => {
         <section className="py-12 px-4 bg-white w-full sm:w-3/4 mx-auto">
           <div className="grid grid-cols-1  justify-center items-center">
             <div className="flex flex-col">
-              <h2 className="text-3xl font-semibold mb-5 text-blue-500">
-                AI Chatbots
-              </h2>
-              <p className="mb-5 text-blue-300">
+              <h2 className="text-3xl font-semibold mb-5 ">AI Chatbots</h2>
+              <p className="mb-5 ">
                 Interact with clients through personalized, context-sensitive
                 chatbots across various platforms.
               </p>
-              <p className="font-semibold text-4xl text-blue-700 ">Features:</p>
+              <p className="font-semibold text-4xl  ">Features:</p>
               <div className="flex gap-6 flex-col  mt-4">
                 <section className=" py-12">
                   <div className="container mx-auto flex flex-wrap items-center justify-center">
@@ -391,7 +372,7 @@ const ProductsPage = () => {
                 </section>
               </div>
 
-              <p className="font-semibold text-4xl text-blue-700 ">Pricing:</p>
+              <p className="font-semibold text-4xl  ">Pricing:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
                 <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
                   <div className="text-center mb-6">
@@ -446,6 +427,28 @@ const ProductsPage = () => {
                     <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
                       Choose Plan
                     </button>
+                    <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
                   </div>
                 </div>
 
@@ -474,107 +477,52 @@ const ProductsPage = () => {
                     <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
                       Choose Plan
                     </button>
+                    <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
-            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
-              <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Setup - To setup the platform for the client Phone Number
-                    --New
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •number to callCalling Server Enable calling and recording
-                    services
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Phone Number --New number to call
-                  </p>
-                  <div>✅</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
-              <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Setup - To setup the platform for the client Phone Number
-                    --New
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •number to callCalling Server Enable calling and recording
-                    services
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Phone Number --New number to call
-                  </p>
-                  <div>✅</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 flex justify-between gap-5">
-              <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Setup - To setup the platform for the client Phone Number
-                    --New
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •number to callCalling Server Enable calling and recording
-                    services
-                  </p>
-                  <div>✅</div>
-                </div>
-                <div className="flex justify-between">
-                  <p className="text-xs font-bold">
-                    •Phone Number --New number to call
-                  </p>
-                  <div>✅</div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </section>
       )}
 
       <section className="py-12 px-4 bg-white">
         <div className="">
           <div className="flex flex-col w-full pl-0 sm:pl-10  justify-center items-center">
-            <h2 className="text-3xl font-semibold mb-8 text-blue-700">
-              Custom AI Agents
-            </h2>
-            <p className="mb-8 text-blue-600">
+            <h2 className="text-3xl font-semibold mb-8 ">Custom AI Agents</h2>
+            <p className="mb-8 ">
               Customized solutions designed to meet the specific demands of your
               business, ensuring unparalleled outcomes.
             </p>
-            <p className="mb-8 text-blue-500">
+            <p className="mb-8 ">
               Personalized consultation and development procedures
             </p>
-            <p className="mb-8 text-blue-400">
+            <p className="mb-8 ">
               Effortless incorporation with current infrastructures
             </p>
-            <p className="mb-8 text-blue-300">
+            <p className="mb-8 ">
               Demonstrated triumphs spanning various sectors
             </p>
           </div>
