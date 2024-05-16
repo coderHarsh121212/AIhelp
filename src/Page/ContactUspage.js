@@ -10,7 +10,7 @@ const ContactUspage = () => {
         backgroundSize: 'cover'
       }}
     >
-     <h1 className="text-3xl sm:text-5xl lg:text-7xl">Contact Us</h1>
+     <h1 className="text-3xl sm:text-5xl lg:text-7xl text-white">Contact Us</h1>
      </div>
      <div className=" mx-auto py-20">
         <section className="py-12 ">

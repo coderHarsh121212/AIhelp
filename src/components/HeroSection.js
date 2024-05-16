@@ -13,14 +13,14 @@ const AISection = () => {
           backgroundSize: "cover"
         }}
       >
-        <div className="container mx-auto px-4 mt-20 lg:mt-40 text-black">
+        <div className="container mx-auto px-4 mt-20 lg:mt-40 text-white">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="md:w-3/4 lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Transform Your <span className="">Business</span> with
                 Intelligent <span className="">AI</span> Agents
               </h2>
-              <h3 className="text-lg md:text-xl text-gray-950 mb-6">
+              <h3 className="text-lg md:text-xl text-gray-200 mb-6">
                 Harness the potential of conversational AI to elevate customer
                 satisfaction by 30%, slash support expenditures by 40%, and
                 propel revenue expansion.

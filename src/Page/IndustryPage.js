@@ -72,7 +72,7 @@ const IndustriesSection = () => {
         }}
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-7xl font-semibold  text-black my-20 mb-40 ">
+          <h2 className="text-7xl font-semibold  text-white my-20 mb-40 ">
             Industries
           </h2>
         </div>
@@ -110,16 +110,16 @@ const IndustryCard = ({ industry, togglePopup }) => {
           Lead Qualification
         </p>
       </div>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 mt-5 items-center justify-center">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 mt-5 items-center justify-center sm:gap-1">
         <button
           onClick={togglePopup}
-          className=" text-black flex sm:gap-4 border-t-2  rounded border-r-2 py-3 px-5 text-sm"
+          className=" font-semibold flex sm:gap-4 border-t-2  rounded border-r-2 py-3 px-5 text-sm text-white bg-blue-500 hover:bg-blue-600 hover:shadow-xl"
         >
           <Phone /> Sales Pre Qualification
         </button>
         <button
           onClick={togglePopup}
-          className=" text-black border-t-2 flex gap-2 px-5 rounded py-3"
+          className=" font-semibold flex sm:gap-4 border-t-2  rounded border-r-2 py-3 px-5 text-sm text-white bg-blue-500 hover:bg-blue-600 hover:shadow-xl"
         >
           <InstallNow />
           Services

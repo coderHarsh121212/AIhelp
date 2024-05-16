@@ -4,11 +4,11 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import aboutimg1 from "../images/achievements.png";
 import PricingCard from "../components/Pricing";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const ProductsPage = () => {
   const { id } = useParams();
-
+const navigate = useNavigate()
   return (
     <div className="min-h-screen">
       <header
@@ -20,10 +20,10 @@ const ProductsPage = () => {
         }}
       >
         <div className="w-full sm:w-4/5 mx-auto">
-          <h1 className=" text-3xl md:text-5xl font-bold mb-4 text-black">
+          <h1 className=" text-3xl md:text-5xl font-bold mb-4 text-white">
             Harness the Potential of Artificial Intelligence
           </h1>
-          <p className="text-lg md:text-lg text-gray-600 mb-8">
+          <p className="text-lg md:text-lg text-white mb-8">
             Revolutionize your business using our state-of-the-art AI Voicebots,
             Chatbots, and Tailored AI Assistants. Encounter unmatched
             productivity, heightened interaction with customers, and expedited
@@ -150,7 +150,7 @@ const ProductsPage = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onClick={()=>navigate("/paymentgateway")}>
                       Choose Plan
                     </button>
                   </div>
@@ -200,7 +200,7 @@ const ProductsPage = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onClick={()=>navigate("/paymentgateway")}>
                       Choose Plan
                     </button>
                   </div>
@@ -250,7 +250,7 @@ const ProductsPage = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onClick={()=>navigate("/paymentgateway")}>
                       Choose Plan
                     </button>
                   </div>
@@ -396,9 +396,31 @@ const ProductsPage = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onClick={()=>navigate("/paymentgateway")}>
                       Choose Plan
                     </button>
+                    <div className="flex flex-col gap-4 pt-5">
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Setup - To setup the platform for the client Phone Number
+                    --New
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •number to callCalling Server Enable calling and recording
+                    services
+                  </p>
+                  <div>✅</div>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">
+                    •Phone Number --New number to call
+                  </p>
+                  <div>✅</div>
+                </div>
+              </div>
                   </div>
                 </div>
 
@@ -424,10 +446,10 @@ const ProductsPage = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onClick={()=>navigate("/paymentgateway")}>
                       Choose Plan
                     </button>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 pt-5">
                 <div className="flex justify-between">
                   <p className="text-xs font-bold">
                     •Setup - To setup the platform for the client Phone Number
@@ -474,10 +496,10 @@ const ProductsPage = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onClick={()=>navigate("/paymentgateway")}>
                       Choose Plan
                     </button>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 pt-5">
                 <div className="flex justify-between">
                   <p className="text-xs font-bold">
                     •Setup - To setup the platform for the client Phone Number
