@@ -53,7 +53,7 @@ const Navbar = () => {
           >
             <NavLink
               to="/"
-              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg border-b-2 text-${
                 scrollY > 0 ? "white hover:text-blue-500" : "black"
               } hover:hover-nav`}
               onClick={() => {
