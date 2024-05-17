@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, useNavigate, useLocation, NavLink } from "react-router-dom";
-
+import backGroundImage from '../images/background.jpg'
 import { CaretDown, CaretUp, CloseBtn, Hamburger } from "../icons/icons";
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -34,7 +34,7 @@ const Navbar = () => {
           className="flex items-center justify-between text-black bg-no-repeat bg-cover rounded-full"
           style={{
             background:
-              'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+              `url(${backGroundImage})`,
             backgroundSize: "cover"
           }}
         >
@@ -47,7 +47,7 @@ const Navbar = () => {
             />
           </div>
           <div
-            className={`hidden md:flex items-center space-x-4 pr-10 xl:space-x-8 ${
+            className={`hidden md:flex items-center space-x-4 pr-10 xl:space-x-8 justify-center${
               scrollY > 0 ? "space-x-3" : "space-x-5"
             }`}
           >
@@ -184,19 +184,19 @@ const Navbar = () => {
             </NavLink>
 
             <button
-              className="bg-green-500 px-3 xl:px-5 py-1 xl:py-2 rounded-md text-white hidden lg:block hover:bg-green-600"
+              className="bg-green-500 px-3 xl:px-5 py-1 xl:py-1 rounded-md text-white hidden lg:block hover:bg-green-600 xl:text-base"
               onClick={() => navigate("/getStarted")}
             >
               Login
             </button>
             <button
-              className="bg-blue-500 px-3 py-1 xl:px-5 xl:py-2 rounded-md text-white hidden lg:block hover:bg-blue-600"
+              className="bg-blue-500 px-3 py-1 xl:px-5 xl:py-1 rounded-md text-white hidden lg:block hover:bg-blue-600 xl:text-base"
               onClick={() => navigate("/freetrial")}
             >
               Start for free
             </button>
             <button
-              className="bg-blue-500 px-3 py-1 xl:px-5 xl:py-2 rounded-md text-white hidden lg:block hover:bg-blue-600"
+              className="bg-blue-500 px-3 py-2 xl:px-5 xl:py-1 rounded-md text-white hidden lg:block hover:bg-blue-600 xl:text-base"
               onClick={() => navigate("/scheduleDemo")}
             >
               Schedule a Demo
@@ -207,9 +207,7 @@ const Navbar = () => {
       <div
         className="fixed  px-3 z-50 md:hidden flex justify-between w-full items-center"
         style={{
-          background:
-            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-          backgroundSize: "cover"
+          background: `url(${backGroundImage})`, backgroundSize: "cover"
         }}
       >
         <img
@@ -231,14 +229,14 @@ const Navbar = () => {
       </div>
       <div
         id="hiddenLinks"
-        className={`md:hidden  bg-white fixed sm:w-1/3 w-3/4 h-fit bg-cover bg-center text-black rounded-md top-16 flex flex-col right-0 gap-4 py-7 custom-transition ${
+        className={`md:hidden  bg-white fixed w-full  h-fit bg-cover bg-center pb-1 text-black rounded-md top-16 flex flex-col right-0 gap-3 pt-6  custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
       >
         <NavLink
           to="/"
           onClick={() => navigate("/")}
-          className={`hover:text-blue-500 font-sans text-xl ${
+          className={`hover:text-blue-500 font-sans text-xl px-8 py-1 text-start border-b-2${
             location.pathname === "/" ? "text-blue-900" : ""
           }`}
         >
@@ -247,7 +245,7 @@ const Navbar = () => {
         <NavLink
           to="/aboutUs"
           onClick={() => navigate("/aboutUs")}
-          className={`hover:text-blue-500 font-sans text-xl ${
+          className={`hover:text-blue-500 font-sans text-xl px-8 py-1 text-start border-b-2${
             location.pathname === "/aboutUs" ? "text-blue-900" : ""
           }`}
         >
@@ -255,7 +253,7 @@ const Navbar = () => {
         </NavLink>
 
         <a
-          className={`flex gap-1 justify-center text-xl  hover:hover-nav cursor-pointer items-center transition-all`}
+          className={`flex gap-1 justify-between  text-xl text-start px-8 py-1 border-b-2 hover:hover-nav cursor-pointer items-center transition-all`}
           style={{
             color: location.pathname === "/Products" ? "#240ada" : "inherit"
           }}
@@ -265,10 +263,10 @@ const Navbar = () => {
         </a>
         {showdrop && (
           <div className=" flex flex-col gap-5 py-1 rounded transition-all">
-            <div className=" text-black  flex flex-col gap-5  text-lg ">
+            <div className=" text-black  flex flex-col gap-3  text-lg ">
               <NavLink
                 to="/Products/AIVoice"
-                className={`text-xl  relative text-${
+                className={`text-xl  relative px-8  text-start  text-${
                   scrollY > 0 ? "white hover:text-blue-500" : "black"
                 } hover:hover-nav`}
                 isactive={() => location.pathname === "/Products/AIVoice"}
@@ -283,7 +281,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/Products/AIChat"
-                className={`text-xl relative text-${
+                className={`text-xl  relative px-8  text-start  text-${
                   scrollY > 0 ? "white hover:text-blue-500" : "black"
                 } hover:hover-nav`}
                 isactive={() => location.pathname === "/Products/AIChat"}
@@ -302,7 +300,7 @@ const Navbar = () => {
         <NavLink
           to="/industry"
           onClick={() => navigate("/industry")}
-          className={`hover:text-blue-500 font-sans text-xl ${
+          className={`hover:text-blue-500 px-8 py-1 text-start border-b-2 font-sans text-xl ${
             location.pathname === "/contactus" ? "text-blue-900" : ""
           }`}
         >
@@ -311,14 +309,31 @@ const Navbar = () => {
         <NavLink
           to="/contactus"
           onClick={() => navigate("/contactus")}
-          className={`hover:text-blue-500 font-sans text-xl ${
+          className={`hover:text-blue-500 px-8 py-1 text-start border-b-2 font-sans text-xl ${
             location.pathname === "/contactus" ? "text-blue-900" : ""
           }`}
         >
           Contact Us
         </NavLink>
-
-        {/* Add Log in button or any other links */}
+      
+        <button
+              className="bg-green-500 px-3 xl:px-5 py-2 xl:py-1  text-white   hover:bg-green-600"
+              onClick={() => navigate("/getStarted")}
+            >
+              Login
+            </button>
+            <button
+              className="bg-blue-500 px-3 py-2 xl:px-5  xl:py-1  text-white   hover:bg-blue-600"
+              onClick={() => navigate("/freetrial")}
+            >
+              Start for free
+            </button>
+            <button
+              className="bg-blue-500 px-3 py-2 xl:px-5 xl:py-1  text-white   hover:bg-blue-600"
+              onClick={() => navigate("/scheduleDemo")}
+            >
+              Schedule a Demo
+            </button>
       </div>
       <Outlet />
     </div>

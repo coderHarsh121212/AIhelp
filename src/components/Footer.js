@@ -1,9 +1,6 @@
 import React from "react";
 import { LinkedInLogo, YoutubeLogo } from "../icons/icons";
-import homeImage from "../images/image.png";
-import AboutImage from "../images/bg1.png";
-import ProductImage from "../images/bg3.png";
-import IndustryImage from "../images/bg2.png";
+import backGroundImage from "../images/background.jpg";
 import { useLocation, useNavigate } from "react-router-dom";
 const Footer = () => {
   const location = useLocation();
@@ -12,7 +9,7 @@ const Footer = () => {
     <footer
       className=" text-black py-8 bg-no-repeat bg-contain xl:px-24"
       style={{
-        background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
+        background: `url(${backGroundImage})`,
         backgroundSize: 'cover'
       }}
     >

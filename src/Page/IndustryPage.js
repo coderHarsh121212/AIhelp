@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { InstallNow, Phone, Qualification, Realtime } from "../icons/icons";
-import aboutimg from "../images/bg2.png";
+import backGroundImage from "../images/background.jpg";
 // Import YouTube component from 'react-youtube' if you're using it
 
 const IndustriesSection = () => {
@@ -67,12 +67,11 @@ const IndustriesSection = () => {
         className="py-24 px-4 bg-gray-100"
         style={{
           background:
-            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-          backgroundSize: "cover"
+          `url(${backGroundImage})`,  backgroundSize: "cover"
         }}
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-7xl font-semibold  text-white my-20 mb-40 ">
+          <h2 className="text-7xl font-semibold  text-black my-20 mb-40 ">
             Industries
           </h2>
         </div>

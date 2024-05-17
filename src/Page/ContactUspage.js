@@ -1,16 +1,16 @@
 import React from "react";
-import aboutimg from "../images/bg1.png";
+import backGroundImage from "../images/background.jpg";
 const ContactUspage = () => {
   return (
     <div>
     <div
       className="relative w-full h-[70vh] flex  px-4 bg-cover  text-black bg-gray-100 items-center justify-center bg-no-repeat"
       style={{
-        background: 'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-        backgroundSize: 'cover'
+        background:
+        `url(${backGroundImage})`,  backgroundSize: "cover"
       }}
     >
-     <h1 className="text-3xl sm:text-5xl lg:text-7xl text-white">Contact Us</h1>
+     <h1 className="text-3xl sm:text-5xl lg:text-7xl text-black">Contact Us</h1>
      </div>
      <div className=" mx-auto py-20">
         <section className="py-12 ">

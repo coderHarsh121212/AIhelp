@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import aboutimg from "../images/image.png";
+import backGroundImage from "../images/background.jpg";
 const AISection = () => {
   const navigate = useNavigate();
   return (
@@ -9,18 +9,17 @@ const AISection = () => {
         className="py-20 bg-contain bg-no-repeat bg-center"
         style={{
           background:
-            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-          backgroundSize: "cover"
+          `url(${backGroundImage})`,  backgroundSize: "cover"
         }}
       >
-        <div className="container mx-auto px-4 mt-20 lg:mt-40 text-white">
+        <div className="container mx-auto px-4 mt-20 lg:mt-40 text-black">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="md:w-3/4 lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Transform Your <span className="">Business</span> with
                 Intelligent <span className="">AI</span> Agents
               </h2>
-              <h3 className="text-lg md:text-xl text-gray-200 mb-6">
+              <h3 className="text-lg md:text-xl text-gray-700 mb-6">
                 Harness the potential of conversational AI to elevate customer
                 satisfaction by 30%, slash support expenditures by 40%, and
                 propel revenue expansion.

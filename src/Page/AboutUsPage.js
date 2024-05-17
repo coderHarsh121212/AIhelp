@@ -1,16 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import aboutimg from "../images/bg1.png";
+import backGroundImage from "../images/background.jpg";
 const AboutUsSection = () => {
   const navigate = useNavigate();
   return (
     <div>
       <section
-        className="px-4 bg-cover bg-no-repeat text-white"
+        className="px-4 bg-cover bg-no-repeat text-black"
         style={{
           background:
-            'url("https://cdn.prod.website-files.com/624b06e1de671ba9e564fc19/658333067f03be832b45cb09_epcKmzT7raQUR63mScyvqkkdVyiIMinl1CJmwKQ76f0zTOESA-out-0.png")',
-          backgroundSize: "cover"
+          `url(${backGroundImage})`,  backgroundSize: "cover"
         }}
       >
         <div className={`w-full md:max-w-7xl mx-auto py-40`}>
@@ -18,8 +17,8 @@ const AboutUsSection = () => {
           <div className="flex flex-col gap-3">
             <div className=" flex flex-col justify-between">
               <div className="">
-                <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p className=" mb-8">
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Our Mission</h3>
+                <p className=" mb-8 text-gray-700">
                   Empowering businesses and enhancing customer experiences
                   through cutting-edge AI innovations.
                 </p>
