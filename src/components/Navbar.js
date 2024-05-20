@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, useNavigate, useLocation, NavLink } from "react-router-dom";
-import backGroundImage from '../images/background.jpg'
+import backGroundImage from "../images/background.jpg";
 import { CaretDown, CaretUp, CloseBtn, Hamburger } from "../icons/icons";
+
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(true);
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
   const location = useLocation();
   const [showdrop, setShowdrop] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -19,23 +21,26 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleLinkClick = (path) => {
+    navigate(path);
+    setIsHidden(true);
+    setShowdrop(false);
+  };
+
   return (
-    <div
-      className={` footer-box fixed z-50 bg-transparent w-[100%] rounded-full  mx-auto`}
-    >
+    <div className="footer-box fixed z-50 w-full">
       <nav
         className={`${
           scrollY > 0
-            ? "white hover:text-blue-500 w-[83%]  text-xs rounded-full  left-24 lg:left-32  mt-6 shadow-2xl"
-            : "black"
-        }  fixed z-50 w-[100%]  hidden md:block`}
+            ? "bg-white text-black shadow-2xl"
+            : "bg-transparent text-white"
+        } fixed z-50 w-full hidden md:block`}
       >
         <div
-          className="flex items-center justify-between text-black bg-no-repeat bg-cover rounded-full"
+          className="flex items-center justify-between bg-no-repeat bg-cover rounded-full"
           style={{
-            background:
-              `url(${backGroundImage})`,
-            backgroundSize: "cover"
+            background: `url(${backGroundImage})`,
+            backgroundSize: "cover",
           }}
         >
           <div className="flex items-center">
@@ -46,158 +51,88 @@ const Navbar = () => {
               crossOrigin="anonymous"
             />
           </div>
-          <div
-            className={`hidden md:flex items-center space-x-4 pr-10 xl:space-x-8 justify-center${
-              scrollY > 0 ? "space-x-3" : "space-x-5"
-            }`}
-          >
+          <div className="hidden md:flex items-center space-x-4 pr-10">
             <NavLink
               to="/"
-              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
-                scrollY > 0 ? "white hover:text-blue-500" : "black"
-              } hover:hover-nav`}
-              onClick={() => {
-                navigate("/");
-                setShowdrop(false);
-              }}
-              isactive={() =>
-                location.pathname === "/" || location.pathname === "/home"
-              }
-              style={{
-                color: location.pathname === "/" ? "#240ada" : "inherit",
-                background: location.pathname === "/" ? "#ffff" : "inherit",
-                fontWeight: location.pathname === "/" ? "700" : "inherit"
-              }}
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg ${
+                location.pathname === "/" ? "text-blue-500 font-bold" : ""
+              }`}
+              onClick={() => handleLinkClick("/")}
             >
               Home
             </NavLink>
             <NavLink
               to="/aboutUs"
-              className={` p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
-                scrollY > 0 ? "white hover:text-blue-500" : "black"
-              } hover:hover-nav`}
-              onClick={() => {
-                navigate("/aboutUs");
-                setShowdrop(false);
-              }}
-              isactive={() => location.pathname === "/aboutUs"}
-              style={{
-                color: location.pathname === "/aboutUs" ? "#240ada" : "inherit",
-                background:
-                  location.pathname === "/aboutUs" ? "#ffff" : "inherit",
-                fontWeight: location.pathname === "/aboutUs" ? "700" : "inherit"
-              }}
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg ${
+                location.pathname === "/aboutUs" ? "text-blue-500 font-bold" : ""
+              }`}
+              onClick={() => handleLinkClick("/aboutUs")}
             >
               About Us
             </NavLink>
-            <a
-              className={`flex gap-1 relative text-xs md:text-base lg:text-sm xl:text-lg hover:hover-nav cursor-pointer transition-all`}
-              style={{
-                color:
-                  location.pathname === "/Products" ? "#240ada" : "inherit",
-                background:
-                  location.pathname === "/Products" ? "#ffff" : "inherit",
-                fontWeight:
-                  location.pathname === "/Products" ? "700" : "inherit"
-              }}
-              onClick={() => setShowdrop(!showdrop)}
-            >
-              Products{showdrop ? <CaretUp /> : <CaretDown />}
+            <div className="relative">
+              <button
+                className="flex items-center p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg"
+                onClick={() => setShowdrop(!showdrop)}
+              >
+                Products {showdrop ? <CaretUp /> : <CaretDown />}
+              </button>
               {showdrop && (
-                <div className="bg-white absolute top-8  px-5  flex flex-col gap-5 py-3 rounded transition-all shadow-2xl">
-                  <div className="bg-transparent text-black  flex flex-col gap-2 w-52 text-lg">
-                    <NavLink
-                      to="/Products/AIVoice"
-                      className={` relative text-${
-                        scrollY > 0 ? "white hover:text-blue-500" : "black"
-                      } hover:hover-nav`}
-                      isactive={() => location.pathname === "/Products/AIVoice"}
-                      style={{
-                        color:
-                          location.pathname === "/Products/AIVoice"
-                            ? "#240ada"
-                            : "inherit"
-                      }}
-                    >
-                      AI Voice
-                    </NavLink>
-                    <NavLink
-                      to="/Products/AIChat"
-                      className={` relative text-xs md:text-base lg:text-sm xl:text-lg text-${
-                        scrollY > 0 ? "white hover:text-blue-500" : "black"
-                      } hover:hover-nav`}
-                      isactive={() => location.pathname === "/Products/AIChat"}
-                      style={{
-                        color:
-                          location.pathname === "/Products/AIChat"
-                            ? "#240ada"
-                            : "inherit"
-                      }}
-                    >
-                      AI Chat
-                    </NavLink>
-                  </div>
+                <div className="absolute bg-white shadow-2xl rounded-md mt-2 py-2 w-40">
+                  <NavLink
+                    to="/Products/AIVoice"
+                    className={`block px-4 py-2 ${
+                      location.pathname === "/Products/AIVoice" ? "text-blue-500 font-bold" : ""
+                    }`}
+                    onClick={() => handleLinkClick("/Products/AIVoice")}
+                  >
+                    AI Voice
+                  </NavLink>
+                  <NavLink
+                    to="/Products/AIChat"
+                    className={`block px-4 py-2 ${
+                      location.pathname === "/Products/AIChat" ? "text-blue-500 font-bold" : ""
+                    }`}
+                    onClick={() => handleLinkClick("/Products/AIChat")}
+                  >
+                    AI Chat
+                  </NavLink>
                 </div>
               )}
-            </a>
+            </div>
             <NavLink
               to="/industry"
-              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
-                scrollY > 0 ? "white hover:text-blue-500" : "black"
-              } hover:hover-nav`}
-              onClick={() => {
-                navigate("/industry");
-                setShowdrop(false);
-              }}
-              isactive={() => location.pathname === "/industry"}
-              style={{
-                color:
-                  location.pathname === "/industry" ? "#240ada" : "inherit",
-                background:
-                  location.pathname === "/industry" ? "#ffff" : "inherit",
-                fontWeight:
-                  location.pathname === "/industry" ? "700" : "inherit"
-              }}
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg ${
+                location.pathname === "/industry" ? "text-blue-500 font-bold" : ""
+              }`}
+              onClick={() => handleLinkClick("/industry")}
             >
               Industry
             </NavLink>
             <NavLink
               to="/contactus"
-              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg text-${
-                scrollY > 0 ? "white hover:text-blue-500" : "black"
-              } hover:hover-nav`}
-              onClick={() => {
-                navigate("/industry");
-                setShowdrop(false);
-              }}
-              isactive={() => location.pathname === "/contactus"}
-              style={{
-                color:
-                  location.pathname === "/contactus" ? "#240ada" : "inherit",
-                background:
-                  location.pathname === "/contactus" ? "#ffff" : "inherit",
-                fontWeight:
-                  location.pathname === "/contactus" ? "700" : "inherit"
-              }}
+              className={`p-2 rounded-md text-xs md:text-base lg:text-sm xl:text-lg ${
+                location.pathname === "/contactus" ? "text-blue-500 font-bold" : ""
+              }`}
+              onClick={() => handleLinkClick("/contactus")}
             >
               Contact Us
             </NavLink>
-
             <button
               className="bg-green-500 px-3 xl:px-5 py-1 xl:py-1 rounded-md text-white hidden lg:block hover:bg-green-600 xl:text-base"
-              onClick={() => navigate("/getStarted")}
+              onClick={() => handleLinkClick("/getStarted")}
             >
               Login
             </button>
             <button
               className="bg-blue-500 px-3 py-1 xl:px-5 xl:py-1 rounded-md text-white hidden lg:block hover:bg-blue-600 xl:text-base"
-              onClick={() => navigate("/freetrial")}
+              onClick={() => handleLinkClick("/freetrial")}
             >
               Start for free
             </button>
             <button
               className="bg-blue-500 px-3 py-2 xl:px-5 xl:py-1 rounded-md text-white hidden lg:block hover:bg-blue-600 xl:text-base"
-              onClick={() => navigate("/scheduleDemo")}
+              onClick={() => handleLinkClick("/scheduleDemo")}
             >
               Schedule a Demo
             </button>
@@ -205,9 +140,10 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className="fixed  px-3 z-50 md:hidden flex justify-between w-full items-center"
+        className="fixed px-3 z-50 md:hidden flex justify-between w-full items-center"
         style={{
-          background: `url(${backGroundImage})`, backgroundSize: "cover"
+          background: `url(${backGroundImage})`,
+          backgroundSize: "cover",
         }}
       >
         <img
@@ -229,13 +165,13 @@ const Navbar = () => {
       </div>
       <div
         id="hiddenLinks"
-        className={`md:hidden  bg-white fixed w-full  h-fit bg-cover bg-center pb-1 text-black rounded-md top-16 flex flex-col right-0 gap-3 pt-6  custom-transition ${
+        className={`md:hidden bg-white fixed w-full h-fit pb-1 text-black rounded-md top-16 flex flex-col right-0 gap-3 pt-6 custom-transition ${
           isHidden ? "hidden" : "block"
         }`}
       >
         <NavLink
           to="/"
-          onClick={() => navigate("/")}
+          onClick={() => handleLinkClick("/")}
           className={`hover:text-blue-500 font-sans text-xl px-8 py-1 text-start border-b-2 ${
             location.pathname === "/" ? "text-blue-900" : ""
           }`}
@@ -244,96 +180,78 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/aboutUs"
-          onClick={() => navigate("/aboutUs")}
-          className={`hover:text-blue-500 font-sans text-xl px-8 py-1 text-start border-b-2${
+          onClick={() => handleLinkClick("/aboutUs")}
+          className={`hover:text-blue-500 font-sans text-xl px-8 py-1 text-start border-b-2 ${
             location.pathname === "/aboutUs" ? "text-blue-900" : ""
           }`}
         >
-          About US
+          About Us
         </NavLink>
 
-        <a
-          className={`flex gap-1 justify-between  text-xl text-start px-8 py-1 border-b-2 hover:hover-nav cursor-pointer items-center transition-all`}
-          style={{
-            color: location.pathname === "/Products" ? "#240ada" : "inherit"
-          }}
+        <div
+          className={`flex gap-1 justify-between text-xl text-start px-8 py-1 border-b-2 hover:text-blue-500 cursor-pointer items-center transition-all`}
           onClick={() => setShowdrop(!showdrop)}
         >
-          Products{showdrop ? <CaretUp /> : <CaretDown />}
-        </a>
+          Products {showdrop ? <CaretUp /> : <CaretDown />}
+        </div>
         {showdrop && (
-          <div className=" flex flex-col gap-5 py-1 rounded transition-all">
-            <div className=" text-black  flex flex-col gap-3  text-lg ">
-              <NavLink
-                to="/Products/AIVoice"
-                className={`text-xl  relative px-8  text-start  text-${
-                  scrollY > 0 ? "white hover:text-blue-500" : "black"
-                } hover:hover-nav`}
-                isactive={() => location.pathname === "/Products/AIVoice"}
-                style={{
-                  color:
-                    location.pathname === "/Products/AIVoice"
-                      ? "#240ada"
-                      : "inherit"
-                }}
-              >
-                AI Voice
-              </NavLink>
-              <NavLink
-                to="/Products/AIChat"
-                className={`text-xl  relative px-8  text-start  text-${
-                  scrollY > 0 ? "white hover:text-blue-500" : "black"
-                } hover:hover-nav`}
-                isactive={() => location.pathname === "/Products/AIChat"}
-                style={{
-                  color:
-                    location.pathname === "/Products/AIChat"
-                      ? "#240ada"
-                      : "inherit"
-                }}
-              >
-                AI Chat
-              </NavLink>
-            </div>
+          <div className="flex flex-col gap-3 px-8">
+            <NavLink
+              to="/Products/AIVoice"
+              onClick={() => handleLinkClick("/Products/AIVoice")}
+              className={`text-xl py-1 ${
+                location.pathname === "/Products/AIVoice" ? "text-blue-900" : ""
+              }`}
+            >
+              AI Voice
+            </NavLink>
+            <NavLink
+              to="/Products/AIChat"
+              onClick={() => handleLinkClick("/Products/AIChat")}
+              className={`text-xl py-1 ${
+                location.pathname === "/Products/AIChat" ? "text-blue-900" : ""
+              }`}
+            >
+              AI Chat
+            </NavLink>
           </div>
         )}
         <NavLink
           to="/industry"
-          onClick={() => navigate("/industry")}
+          onClick={() => handleLinkClick("/industry")}
           className={`hover:text-blue-500 px-8 py-1 text-start border-b-2 font-sans text-xl ${
-            location.pathname === "/contactus" ? "text-blue-900" : ""
+            location.pathname === "/industry" ? "text-blue-900" : ""
           }`}
         >
           Industry
         </NavLink>
         <NavLink
           to="/contactus"
-          onClick={() => navigate("/contactus")}
+          onClick={() => handleLinkClick("/contactus")}
           className={`hover:text-blue-500 px-8 py-1 text-start border-b-2 font-sans text-xl ${
             location.pathname === "/contactus" ? "text-blue-900" : ""
           }`}
         >
           Contact Us
         </NavLink>
-      
         <button
-              className="bg-green-500 px-3 xl:px-5 py-2 xl:py-1  text-white   hover:bg-green-600"
-              onClick={() => navigate("/getStarted")}
-            >
-              Login
-            </button>
-            <button
-              className="bg-blue-500 px-3 py-2 xl:px-5  xl:py-1  text-white   hover:bg-blue-600"
-              onClick={() => navigate("/freetrial")}
-            >
-              Start for free
-            </button>
-            <button
-              className="bg-blue-500 px-3 py-2 xl:px-5 xl:py-1  text-white   hover:bg-blue-600"
-              onClick={() => navigate("/scheduleDemo")}
-            >
-              Schedule a Demo
-            </button>
+          className="bg-green-500 text-white px-8 py-2 mt-2 rounded-md"
+          onClick={() => handleLinkClick("/getStarted")}
+        >
+          Login
+        </button>
+        <button
+          className="bg-blue-500 text-white px-8 py-2 mt-2 rounded-md"
+          onClick={() => handleLinkClick("/freetrial")}
+        >
+          Start for free
+        </button>
+        <button
+          className="bg-blue-500 text-white px-8 py-2 mt-2 rounded-md"
+          onClick={() => handleLinkClick("/scheduleDemo")}
+        >
+          Schedule a Demo
+        </button>
       </div>
       <Outlet />
     </div>
