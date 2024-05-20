@@ -78,7 +78,7 @@ const Navbar = () => {
                 Products {showdrop ? <CaretUp /> : <CaretDown />}
               </button>
               {showdrop && (
-                <div className="absolute bg-white shadow-2xl rounded-md mt-2 py-2 w-40">
+                <div className="absolute bg-white shadow-2xl rounded-md mt-2 py-2 w-40 text-black">
                   <NavLink
                     to="/Products/AIVoice"
                     className={`block px-4 py-2 ${
